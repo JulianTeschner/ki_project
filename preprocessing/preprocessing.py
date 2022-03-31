@@ -31,6 +31,36 @@ def count_punctuation(
     return data
 
 
+def count_negation(
+    data: pd.DataFrame, negation: List[str]
+) -> pd.DataFrame:
+    res: list[int] = []
+    for entry in data["text"]:
+        res.append(len([word for word in entry.split(" ") if word.lower() in negation]))
+    data["Negation"] = res
+    return data
+
+
+def start_sentence(
+    data: pd.DataFrame, start: List[str], title:str
+) -> pd.DataFrame:
+    res: list[int] = []
+    for entry in data["text"]:
+        res.append(len([word for word in entry.split(" ", 1) if word in start]))
+    data[title] = res
+    return data
+
+
+def count_uppercase_words(
+    data: pd.DataFrame, exception: List[str]
+) -> pd.DataFrame:
+    res: list[int] = []
+    for entry in data["text"]:
+        res.append(len([word for word in entry.split(" ") if word.isupper() and word not in exception]))
+    data["upper_case"] = res
+    return data
+    
+
 def main():
     data = pd.read_csv("data.csv", quotechar="'")
 
@@ -53,6 +83,12 @@ def main():
     data = count_punctuation(data, [","], "punctuation_comma")
     data = count_punctuation(data, ["!"], "punctuation_exclamation")
     data = count_punctuation(data, ["?"], "punctuation_question")
+    
+    data = count_negation(data, ["not", "no"])
+    
+    data = start_sentence(data, ["I"], "start_with_I")
+    
+    data = count_uppercase_words(data, ["I", "A"])
 
     print(data)
     # Write to file
