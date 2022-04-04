@@ -1,3 +1,5 @@
+import csv
+
 import numpy as np
 import pandas as pd
 from typing import List
@@ -59,6 +61,13 @@ def count_uppercase_words(
         res.append(len([word for word in entry.split(" ") if word.isupper() and word not in exception]))
     data["upper_case"] = res
     return data
+
+def add_quotation_marks(data: pd.DataFrame
+) -> pd.DataFrame:
+    data["text"] = data["text"].astype(str) + "a"
+    data["text"] = "a" + data["text"].astype(str)
+
+    return data
     
 
 def main():
@@ -95,6 +104,12 @@ def main():
     with open("mod_data.csv", mode="w", encoding="utf-8") as dst:
         data.to_csv(dst, quotechar="'")
 
+    # data = add_quotation_marks(data)
+
+    print(data["text"])
+
+    with open("mod_data.arff", mode="w", encoding="utf-8") as dst:
+        data.to_csv(dst, quoting=csv.QUOTE_NONNUMERIC, quotechar="'", index=False)
 
 if __name__ == "__main__":
     main()
