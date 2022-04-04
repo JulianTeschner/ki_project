@@ -108,7 +108,7 @@ def main():
 
     print(data["text"])
 
-    with open("mod_data.arff", mode="w", encoding="utf-8") as dst:
+    with open("mod_data_first_iteration.arff", mode="w", encoding="utf-8") as dst:
         data.to_csv(dst, quoting=csv.QUOTE_NONNUMERIC, quotechar="'", index=False)
 
 if __name__ == "__main__":
