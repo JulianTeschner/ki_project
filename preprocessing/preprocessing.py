@@ -65,6 +65,11 @@ def count_uppercase_words(data: pd.DataFrame, exception: List[str]) -> pd.DataFr
     return data
 
 
+# Filter sentences that have no negative, positiv or negation
+def in_no_list():
+    pass
+
+
 def main():
     data = pd.read_csv("data.csv", quotechar="'")
 
@@ -96,8 +101,6 @@ def main():
         [
             "not",
             "no",
-            "n't",
-            'n"t',
             "never",
             "neither",
             "nor",
@@ -105,6 +108,46 @@ def main():
             "nothing",
             "No one.",
             "nowhere",
+            "ain't",
+            "aren't",
+            "can't",
+            "couldn't",
+            "didn't",
+            "doesn't",
+            "don't",
+            "hadn't",
+            "hasn't",
+            "haven't",
+            "isn't",
+            "mightn't",
+            "mustn't",
+            "needn't",
+            "shan't",
+            "shouldn't",
+            "wasn't",
+            "weren't",
+            "won't",
+            "wouldn't",
+            'ain"t',
+            'aren"t',
+            'can"t',
+            'could"t',
+            'didn"t',
+            'doesn"t',
+            'don"t',
+            'hadn"t',
+            'hasn"t',
+            'haven"t',
+            'isn"t',
+            'mightn"t',
+            'mustn"t',
+            'needn"t',
+            'shan"t',
+            'shouldn"t',
+            'wasn"t',
+            'weren"t',
+            'won"t',
+            'would"t',
         ],
     )
 
@@ -129,7 +172,7 @@ def main():
 
     print(data["text"])
 
-    with open("mod_data_first_iteration_v3.arff", mode="w", encoding="utf-8") as dst:
+    with open("mod_data_first_iteration_v4.arff", mode="w", encoding="utf-8") as dst:
         data.to_csv(dst, quoting=csv.QUOTE_NONNUMERIC, quotechar="'", index=False)
 
 
