@@ -58,7 +58,7 @@
 56,yelp,The Heart Attack Grill in downtown Vegas is an absolutely flat-lined excuse for a restaurant.,0,2,0,1,0,0,0
 57,yelp,Not much seafood and like 5 strings of pasta at the bottom.,1,0,0,1,0,1,0
 58,yelp,'The salad had just the right amount of sauce to not over power the scallop, which was perfectly cooked.',2,0,0,2,0,1,1
-59,yelp,'The ripped banana was not only ripped, but petrified and tasteless.',0,3,0,2,0,1,0
+59,yelp,'The ripped banana was not only ripped, but petrified and tasteless.',0,4,0,2,0,1,0
 60,yelp,At least think to refill my water before I struggle to wave you over for 10 minutes.,0,1,0,1,0,0,0
 61,yelp,This place receives stars for their APPETIZERS!!!,0,0,0,3,3,0,1
 62,yelp,The cocktails are all handmade and delicious.,1,0,0,1,0,0,1
@@ -75,7 +75,7 @@
 73,yelp,'It took over 30 min to get their milkshake, which was nothing more than chocolate milk.',0,0,0,2,0,1,0
 74,yelp,'I guess I should have known that this place would suck, because it is inside of the Excalibur, but I didn"t use my common sense.',0,1,0,3,0,1,0
 75,yelp,The scallop dish is quite appalling for value as well.,1,1,0,1,0,0,0
-76,yelp,2 times - Very Bad Customer Service !,0,1,0,1,1,0,0
+76,yelp,2 times - Very Bad Customer Service !,0,2,0,1,1,0,0
 77,yelp,The sweet potato fries were very good and seasoned well.,4,0,0,1,0,0,1
 78,yelp,Today is the second time I"ve been to their lunch buffet and it was pretty good.,2,0,0,1,0,0,1
 79,yelp,There is so much good food in Vegas that I feel cheated for wasting an eating opportunity by going to Rice and Company.,1,2,0,1,0,0,0
@@ -146,7 +146,7 @@
 144,yelp,Nice blanket of moz over top but i feel like this was done to cover up the subpar food.,3,0,0,1,0,0,1
 145,yelp,The bathrooms are clean and the place itself is well decorated.,2,0,0,1,0,0,1
 146,yelp,'The menu is always changing, food quality is going down & service is extremely slow.',0,1,0,2,0,0,0
-147,yelp,'The service was a little slow , considering that were served by 3 people servers so the food was coming in a slow pace.',0,2,1,2,0,0,0
+147,yelp,'The service was a little slow , considering that were served by 3 people servers so the food was coming in a slow pace.',0,3,1,2,0,0,0
 148,yelp,I give it 2 thumbs down,0,0,0,0,0,0,0
 149,yelp,We watched our waiter pay a lot more attention to other tables and ignore us.,0,1,0,1,0,0,0
 150,yelp,My fiancé and I came in the middle of the day and we were greeted and seated right away.,1,0,0,1,0,0,1
@@ -191,7 +191,7 @@
 189,yelp,'Also were served hot bread and butter, and home made potato chips with bacon bits on top....very original and very good.',2,0,0,6,0,0,1
 190,yelp,you can watch them preparing the delicious food!),1,0,0,1,1,0,1
 191,yelp,Both of the egg rolls were fantastic.,1,0,0,1,0,0,1
-192,yelp,'When my order arrived, one of the gyros was missing.',0,0,0,2,0,0,0
+192,yelp,'When my order arrived, one of the gyros was missing.',0,1,0,2,0,0,0
 193,yelp,'I had a salad with the wings, and some ice cream for dessert and left feeling quite satisfied.',1,0,0,2,0,0,1
 194,yelp,I"m not really sure how Joey"s was voted best hot dog in the Valley by readers of Phoenix Magazine.,2,0,0,1,0,1,0
 195,yelp,The best place to go for a tasty bowl of Pho!,2,0,0,1,1,0,1
@@ -227,7 +227,7 @@
 225,yelp,I loved the bacon wrapped dates.,1,0,0,1,0,0,1
 226,yelp,This is an unbelievable BARGAIN!,1,1,0,1,1,0,1
 227,yelp,The folks at Otto always make us feel so welcome and special.,1,0,0,1,0,0,1
-228,yelp,'As for the "mains," also uninspired.',0,0,0,2,0,0,0
+228,yelp,'As for the "mains," also uninspired.',0,1,0,2,0,0,0
 229,yelp,This is the place where I first had pho and it was amazing!!,1,0,0,2,2,0,1
 230,yelp,This wonderful experience made this place a must-stop whenever we are in town again.,1,0,0,1,0,0,1
 231,yelp,'If the food isn"t bad enough for you, then enjoy dealing with the world"s worst/annoying drunk people.',2,2,0,2,0,1,0
@@ -240,7 +240,7 @@
 238,yelp,If she had not rolled the eyes we may have stayed... Not sure if we will go back and try it again.,0,0,0,4,0,2,0
 239,yelp,'Everyone is very attentive, providing excellent customer service.',2,0,0,2,0,0,1
 240,yelp,Horrible - don"t waste your time and money.,0,2,0,1,0,1,0
-241,yelp,Now this dish was quite flavourful.,0,0,0,1,0,0,1
+241,yelp,Now this dish was quite flavourful.,1,0,0,1,0,0,1
 242,yelp,By this time our side of the restaurant was almost empty so there was no excuse.,0,1,0,1,0,1,0
 243,yelp,'(It wasn"t busy either) Also, the building was FREEZING cold.',0,2,0,2,0,1,0
 244,yelp,like the other reviewer said "you couldn"t pay me to eat at this place again.",1,0,0,1,0,0,0
@@ -390,7 +390,7 @@
 388,yelp,This is a disgrace.,0,1,0,1,0,0,0
 389,yelp,Def coming back to bowl next time,0,0,0,0,0,0,1
 390,yelp,'If you want healthy authentic or ethic food, try this place.',2,0,0,2,0,0,1
-391,yelp,I will continue to come here on ladies night andddd date night ... highly recommend this place to anyone who is in the area (;,1,0,0,3,0,0,1
+391,yelp,I will continue to come here on ladies night andddd date night ... highly recommend this place to anyone who is in the area (;,1,1,0,3,0,0,1
 392,yelp,'I have been here several times in the past, and the experience has always been great.',1,0,0,2,0,0,1
 393,yelp,We walked away stuffed and happy about our first Vegas buffet experience.,1,0,0,1,0,0,1
 394,yelp,Service was excellent and prices are pretty reasonable considering this is Vegas and located inside the Crystals shopping mall by Aria.,3,0,0,1,0,0,1
@@ -446,7 +446,7 @@
 444,yelp,Each day of the week they have a different deal and it"s all so delicious!,1,0,0,1,1,0,1
 445,yelp,'Not to mention the combination of pears, almonds and bacon is a big winner!',1,0,0,2,1,1,1
 446,yelp,Will not be back.,0,0,0,1,0,1,0
-447,yelp,Sauce was tasteless.,0,0,0,1,0,0,0
+447,yelp,Sauce was tasteless.,0,1,0,1,0,0,0
 448,yelp,'The food is delicious and just spicy enough, so be sure to ask for spicier if you prefer it that way.',3,0,0,2,0,0,1
 449,yelp,My ribeye steak was cooked perfectly and had great mesquite flavor.,2,0,0,1,0,0,1
 450,yelp,I don"t think we"ll be going back anytime soon.,0,0,0,1,0,1,0
@@ -592,7 +592,7 @@
 590,yelp,Great place fo take out or eat in.,1,0,0,1,0,0,1
 591,yelp,The waitress was friendly and happy to accomodate for vegan/veggie options.,2,0,0,1,0,0,1
 592,yelp,OMG I felt like I had never eaten Thai food until this dish.,1,0,0,1,0,1,1
-593,yelp,It was extremely "crumby" and pretty tasteless.,1,0,0,1,0,0,0
+593,yelp,It was extremely "crumby" and pretty tasteless.,1,1,0,1,0,0,0
 594,yelp,It was a pale color instead of nice and char and has NO flavor.,1,1,0,1,0,1,0
 595,yelp,The croutons also taste homemade which is an extra plus.,0,0,0,1,0,0,1
 596,yelp,I got home to see the driest damn wings ever!,0,1,0,1,1,0,0
@@ -629,7 +629,7 @@
 627,yelp,Any grandmother can make a roasted chicken better than this one.,1,0,0,1,0,0,0
 628,yelp,I asked multiple times for the wine list and after some time of being ignored I went to the hostess and got one myself.,0,0,0,1,0,0,0
 629,yelp,'The staff is always super friendly and helpful, which is especially cool when you bring two small boys and a baby!',4,0,0,2,1,0,1
-630,yelp,Four stars for the food & the guy in the blue shirt for his great vibe & still letting us in to eat !,1,0,0,1,1,0,1
+630,yelp,Four stars for the food & the guy in the blue shirt for his great vibe & still letting us in to eat !,1,1,0,1,1,0,1
 631,yelp,The roast beef sandwich tasted really good!,1,0,0,1,1,0,1
 632,yelp,'Same evening, him and I are both drastically sick.',0,2,0,2,0,0,0
 633,yelp,High-quality chicken on the chicken Caesar salad.,1,0,0,1,0,0,1
@@ -674,7 +674,7 @@
 672,yelp,As a sushi lover avoid this place by all means.,1,1,0,1,0,0,0
 673,yelp,What a great double cheeseburger!,1,0,0,1,1,0,1
 674,yelp,Awesome service and food.,1,0,0,1,0,0,1
-675,yelp,A fantastic neighborhood gem !!!,2,0,0,3,3,0,1
+675,yelp,A fantastic neighborhood gem !!!,2,1,0,3,3,0,1
 676,yelp,I can"t wait to go back.,0,0,0,1,0,1,1
 677,yelp,The plantains were the worst I"ve ever tasted.,0,1,0,1,0,0,0
 678,yelp,It"s a great place and I highly recommend it.,2,0,0,1,0,0,1
@@ -688,7 +688,7 @@
 686,yelp,'Prices are very reasonable, flavors are spot on, the sauce is home made, and the slaw is not drenched in mayo.',1,0,0,4,0,1,1
 687,yelp,'The decor is nice, and the piano music soundtrack is pleasant.',2,0,0,2,0,0,1
 688,yelp,The steak was amazing...rge fillet relleno was the best seafood plate i have ever had!,1,0,0,4,1,0,1
-689,yelp,'Good food , good service .',2,0,0,2,0,0,1
+689,yelp,'Good food , good service .',2,2,0,2,0,0,1
 690,yelp,It was absolutely amazing.,1,0,0,1,0,0,1
 691,yelp,'I probably won"t be back, to be honest.',1,0,0,2,0,1,0
 692,yelp,will definitely be back!,0,0,0,1,1,0,1
@@ -765,11 +765,11 @@
 763,yelp,But the service was beyond bad.,0,1,0,1,0,0,0
 764,yelp,I"m so happy to be here!!!",1,0,0,3,3,0,1
 765,yelp,Tasted like dirt.,1,1,0,1,0,0,0
-766,yelp,One of the few places in Phoenix that I would definately go back to again .,0,0,0,1,0,0,1
+766,yelp,One of the few places in Phoenix that I would definately go back to again .,0,1,0,1,0,0,1
 767,yelp,The block was amazing.,1,0,0,1,0,0,1
 768,yelp,'It"s close to my house, it"s low-key, non-fancy, affordable prices, good food.',2,0,0,5,0,0,1
 769,yelp,* Both the Hot & Sour & the Egg Flower Soups were absolutely 5 Stars!,1,1,0,1,1,0,1
-770,yelp,My sashimi was poor quality being soggy and tasteless.,0,1,0,1,0,0,0
+770,yelp,My sashimi was poor quality being soggy and tasteless.,0,2,0,1,0,0,0
 771,yelp,Great time - family dinner on a Sunday night.,1,0,0,1,0,0,1
 772,yelp,'the food is not tasty at all, not to say its "real traditional Hunan style".',1,0,0,2,0,2,0
 773,yelp,'What did bother me, was the slow service.',0,2,0,2,0,0,0
@@ -944,7 +944,7 @@
 942,yelp,very slow at seating even with reservation.,0,1,0,1,0,0,0
 943,yelp,Not good by any stretch of the imagination.,1,0,0,1,0,1,0
 944,yelp,The cashew cream sauce was bland and the vegetables were undercooked.,0,1,0,1,0,0,0
-945,yelp,'The chipolte ranch dipping sause was tasteless, seemed thin and watered down with no heat.',0,0,0,2,0,1,0
+945,yelp,'The chipolte ranch dipping sause was tasteless, seemed thin and watered down with no heat.',0,1,0,2,0,1,0
 946,yelp,'It was a bit too sweet, not really spicy enough, and lacked flavor.',2,1,0,3,0,1,0
 947,yelp,I was VERY disappointed!!,0,1,0,2,2,0,0
 948,yelp,This place is horrible and way overpriced.,0,2,0,1,0,0,0
@@ -1077,7 +1077,7 @@
 1075,amazon,Love this product.,1,0,0,1,0,0,1
 1076,amazon,Do Not Buy for D807...wrongly advertised for D807.,0,0,0,4,0,1,0
 1077,amazon,This is a great little item.,1,0,1,1,0,0,1
-1078,amazon,'I love this phone , It is very handy and has a lot of features .',2,0,0,2,0,0,1
+1078,amazon,'I love this phone , It is very handy and has a lot of features .',2,2,0,2,0,0,1
 1079,amazon,I purchased this and within 2 days it was no longer working!!!!!!!!!,0,0,0,9,9,1,0
 1080,amazon,I wear it everyday and it holds up very well.,1,0,0,1,0,0,1
 1081,amazon,Not a good bargain.,2,0,0,1,0,1,0
@@ -1097,14 +1097,14 @@
 1095,amazon,Will order from them again!,0,0,0,1,1,0,1
 1096,amazon,If you plan to use this in a car forget about it.,0,0,0,1,0,0,0
 1097,amazon,I found this product to be waaay too big.,0,0,0,1,0,0,0
-1098,amazon,Best I"ve found so far .... I"ve tried 2 other bluetooths and this one has the best quality (for both me and the listener) as well as ease of using.,4,0,0,5,0,0,1
+1098,amazon,Best I"ve found so far .... I"ve tried 2 other bluetooths and this one has the best quality (for both me and the listener) as well as ease of using.,4,1,0,5,0,0,1
 1099,amazon,I"m very disappointed with my decision.,0,1,0,1,0,0,0
 1100,amazon,Integrated seamlessly with the Motorola RAZR phone.,1,0,0,1,0,0,1
 1101,amazon,'Buyer Beware, you could flush money right down the toilet.',1,1,0,2,0,0,0
 1102,amazon,Definitely a bargain.,1,0,0,1,0,0,1
 1103,amazon,The price was very good and with the free shipping and all it was a good purchase.,3,0,0,1,0,0,1
 1104,amazon,I received my supposedly new motorola 375 and apparently there was not a match between the phone and the charger.,0,0,0,1,0,1,0
-1105,amazon,'Pros:-Good camera - very nice pictures , also has cool styles like black and white, and more.',3,0,0,3,0,0,1
+1105,amazon,'Pros:-Good camera - very nice pictures , also has cool styles like black and white, and more.',3,1,0,3,0,0,1
 1106,amazon,'That"s a huge design flaw (unless I"m not using it correctly, which I don"t think is the case).',1,1,0,2,0,2,0
 1107,amazon,'I love my 350 headset.. My Jabra350 bluetooth headset is great, the reception is very good and the ear piece is a comfortable fit.',4,0,0,4,0,0,1
 1108,amazon,'The camera, although rated at an impressive 1.3 megapixels, renders images that fall well below expectations of such a relatively high resolution.',2,1,0,4,0,0,0
@@ -1236,7 +1236,7 @@
 1234,amazon,Really pleased with this product so far.,1,0,0,1,0,0,1
 1235,amazon,One of my favorite purchases ever.,1,0,0,1,0,0,1
 1236,amazon,best bluetooth on the market.,1,0,0,1,0,0,1
-1237,amazon,Authentic leather with nice shine and comfort .I recommend you this case !!,5,0,0,3,2,0,1
+1237,amazon,Authentic leather with nice shine and comfort .I recommend you this case !!,5,1,0,3,2,0,1
 1238,amazon,I was very excited to get this headset because I thought it was really cute.,2,0,0,1,0,0,1
 1239,amazon,Do not make the same mistake as me.,0,1,0,1,0,1,0
 1240,amazon,Big Disappointment with calendar sync.,0,1,0,1,0,0,0
@@ -1354,7 +1354,7 @@
 1352,amazon,'Comfortable, Nice Range, Good Battery Life.',3,0,0,3,0,0,1
 1353,amazon,Their network coverage in Los Angeles is horrible.,0,1,0,1,0,0,0
 1354,amazon,Excellent starter wireless headset.,1,0,0,1,0,0,0
-1355,amazon,'The loudspeaker option is great, the bumpers with the lights is very ... appealing.',2,0,0,5,0,0,0
+1355,amazon,'The loudspeaker option is great, the bumpers with the lights is very ... appealing.',2,1,0,5,0,0,0
 1356,amazon,The only thing that I think could improve is the sound leaks out from the headset.,1,1,0,1,0,0,0
 1357,amazon,'First off the reception sucks, I have never had more than 2 bars, ever.',0,1,0,3,0,1,0
 1358,amazon,The phone gets EXTREMELY HOT!,1,0,0,1,1,0,0
@@ -1397,7 +1397,7 @@
 1395,amazon,Better than you"d expect.,1,0,0,1,0,0,1
 1396,amazon,'Using all earpieces, left or right, this thing will not stay on my ear.',1,0,0,3,0,1,0
 1397,amazon,Great product and price.,1,0,0,1,0,0,1
-1398,amazon,'Sounds good reasonably priced and effective, Its that simple !',3,0,0,2,1,0,1
+1398,amazon,'Sounds good reasonably priced and effective, Its that simple !',3,1,0,2,1,0,1
 1399,amazon,Still Waiting...... I"m sure this item would work well.. if I ever recieve it!,2,0,0,9,1,0,0
 1400,amazon,what a disappointment,0,1,0,0,0,0,0
 1401,amazon,Very prompt service.,1,0,0,1,0,0,1
@@ -1748,7 +1748,7 @@
 1746,amazon,'stay away from this store, be careful.',0,0,0,2,0,0,0
 1747,amazon,This BlueAnt Supertooth hands-free phone speaker is AWESOME.,1,0,0,1,0,0,1
 1748,amazon,Does not fit.,0,0,0,1,0,1,0
-1749,amazon,.... Item arrived quickly and works great with my Metro PCS Samsung SCH-r450 slider phone and Sony Premium Sound in ear plugs.,2,0,0,5,0,0,1
+1749,amazon,.... Item arrived quickly and works great with my Metro PCS Samsung SCH-r450 slider phone and Sony Premium Sound in ear plugs.,2,1,0,5,0,0,1
 1750,amazon,'It is light, has plenty of battery capacity, and is very confortable to wear for somewhat extended periods of time.',0,0,0,3,0,0,1
 1751,amazon,disappointing.,0,1,0,1,0,0,0
 1752,amazon,Blue Ant is easy to use.,1,0,0,1,0,0,1
@@ -1799,7 +1799,7 @@
 1797,amazon,A good quality bargain.. I bought this after I bought a cheapy from Big Lots that sounded awful and people on the other end couldn"t hear me.,2,1,0,3,0,0,1
 1798,amazon,$50 Down the drain.,0,1,0,1,0,0,0
 1799,amazon,I tried talking real loud but shouting on the telephone gets old and I was still told it wasn"t great.,1,1,0,1,0,1,0
-1800,amazon,'Good , works fine.',3,0,0,2,0,0,1
+1800,amazon,'Good , works fine.',3,1,0,2,0,0,1
 1801,amazon,For the price this was a great deal.,1,0,0,1,0,0,1
 1802,amazon,'Great price, too!',1,0,0,2,1,0,1
 1803,amazon,'If there is a wind, it is completely useless.',0,1,0,2,0,0,0
@@ -1846,7 +1846,7 @@
 1844,amazon,It"s not what it says it is.,0,0,0,1,0,1,0
 1845,amazon,Stay Away From the Q!.,0,0,0,2,1,0,0
 1846,amazon,Used and dirty.,0,1,0,1,0,0,0
-1847,amazon,Very unreliable service from T-mobile !,0,1,0,1,1,0,0
+1847,amazon,Very unreliable service from T-mobile !,0,2,0,1,1,0,0
 1848,amazon,Not good enough for the price.,2,0,0,1,0,1,0
 1849,amazon,I bought two of them and neither will charge.,0,0,0,1,0,1,0
 1850,amazon,It looks very nice.,1,0,0,1,0,0,1
@@ -2309,7 +2309,7 @@
 2307,imdb,All in all a beautiful directed film from Nicola"s roeg wih a sublime cast.,2,0,0,1,0,0,1
 2308,imdb,I"m translating movies for a living and this is the first movie in my 5-year working experience that I found offensive to my intelligence.,1,1,0,1,0,0,0
 2309,imdb,'But when someone strives for greatness and poetry, but delivers a muddled (and often ridiculous) story, a bunch of disparate scenes, pretentious dialogue... Then you get the worst kind of a movie that some other reviewer very accurately defined as "pretentious crap".',2,2,0,7,0,0,0
-2310,imdb,'To those who find this movie intelligent or even masterful, I can only say - it"s your intelligence and your imagination you obviously used to try and make some sense of this pitiful attempt (it"s in our human nature to try and make sense of things) .',3,1,0,2,0,0,0
+2310,imdb,'To those who find this movie intelligent or even masterful, I can only say - it"s your intelligence and your imagination you obviously used to try and make some sense of this pitiful attempt (it"s in our human nature to try and make sense of things) .',3,2,0,2,0,0,0
 2311,imdb,'One more thing: I can tolerate political incorrectness very well, I"m all for artistic freedom and suspension of disbelief, but the Slavic female character was just too much.',2,1,0,3,0,0,0
 2312,imdb,This is such a fun and funny movie.,1,1,0,1,0,0,1
 2313,imdb,Highly entertaining at all angles.,1,0,0,1,0,0,1
@@ -2365,7 +2365,7 @@
 2363,imdb,Definitely worth checking out.,1,0,0,1,0,0,1
 2364,imdb,Damian is so talented and versatile in so many ways of writing and portraying different Characters on screen.,2,0,0,1,0,0,1
 2365,imdb,This movie has a cutting edge to it.,0,0,0,1,0,0,1
-2366,imdb,'I am so pleased to know such a modern day genius is out there , letting is passion for Art drive him and taking us as an audience with him.',4,0,0,2,0,0,1
+2366,imdb,'I am so pleased to know such a modern day genius is out there , letting is passion for Art drive him and taking us as an audience with him.',4,1,0,2,0,0,1
 2367,imdb,'The new characters weren"t all that memorable, and I found myself forgetting who was who.',1,0,0,2,0,1,0
 2368,imdb,I felt as though her going to Ireland did absolutely nothing whatsoever.,0,0,0,1,0,1,0
 2369,imdb,'It didn"t make me scared, horrified, or make me sympathetic towards the characters; it was simply annoying.',0,3,0,3,0,1,0
@@ -2415,7 +2415,7 @@
 2413,imdb,The camera really likes her in this movie.,1,0,0,1,0,0,1
 2414,imdb,I would have casted her in that role after ready the script.,1,0,0,1,0,0,1
 2415,imdb,'As a European, the movie is a nice throwback to my time as a student in the 1980"s and the experiences I had living abroad and interacting with other nationalities, although the circumstances were slightly different.',1,0,0,3,0,0,1
-2416,imdb,I am a fan of his ... This movie sucked really bad.,0,2,0,4,0,0,0
+2416,imdb,I am a fan of his ... This movie sucked really bad.,0,3,0,4,0,0,0
 2417,imdb,Even worse than Ticker!,0,1,0,1,1,0,0
 2418,imdb,& That movie was bad.,0,1,0,1,0,0,0
 2419,imdb,'Only like 3 or 4 buildings used, a couple of locations MAYBE, & poor hummh!',1,1,0,3,1,0,0
@@ -2638,7 +2638,7 @@
 2636,imdb,'Jimmy Stewart is as ever a great hero for Hitchcock, the story rips along to its cool climax at an embassy function, but it lacks the brooding menace of Hitchcock"s black and white, low-budget original.',3,2,0,4,0,0,1
 2637,imdb,Nevertheless yet another wonderful film from the great master"s stable.,3,0,0,1,0,0,1
 2638,imdb,I have to say that this film was excellently produced and tops the ratings as a typical sci fi film!,2,0,0,1,1,0,1
-2639,imdb,Excellently produced by one of Sci-fi"s best producers Scot Vandiver !,2,0,0,1,1,0,1
+2639,imdb,Excellently produced by one of Sci-fi"s best producers Scot Vandiver !,2,1,0,1,1,0,1
 2640,imdb,'But it is entertaining, nonetheless.',1,0,0,2,0,0,1
 2641,imdb,It"s a campy sort of film that"s a joy to watch.,1,0,0,1,0,0,1
 2642,imdb,There"s barely a boring moment in the film and there are plenty of humorous parts.,1,1,0,1,0,0,1
@@ -2892,7 +2892,7 @@
 2890,imdb,The only consistent thread holding the series together were the amazing performances of Leni Parker and Anita LaSelva as the two Taelons in quiet idealogical conflict.,3,1,0,1,0,0,0
 2891,imdb,Now this is a movie I really dislike.,0,1,0,1,0,0,0
 2892,imdb,It"s one of the most boring Horror movies from the 90"s mainly because it starts slow and centers in a boring atmosphere.,0,3,0,1,0,0,0
-2893,imdb,'The puppets look really cheesy , not in a good way like in the Puppet Master 80"s flicks.',3,3,0,2,0,1,0
+2893,imdb,'The puppets look really cheesy , not in a good way like in the Puppet Master 80"s flicks.',3,4,0,2,0,1,0
 2894,imdb,'The story is lame, not interesting and NEVER really explains the sinister origins of the puppets.',1,3,0,2,0,2,0
 2895,imdb,There aren"t death scenes like in previous movies and the f/x are terrible.,1,2,0,1,0,1,0
 2896,imdb,'I felt asleep the first time I watched it, so I can recommend it for insomniacs.',1,0,0,2,0,0,0
