@@ -2006,4 +2006,9 @@ zest
 zippyn
 fantastic
 tasty
+<<<<<<< HEAD
 flavourful
+=======
+exactly
+revealing
+>>>>>>> 5ae5d2c641f3ff7b854efb4c687c229ed5f3f52a
