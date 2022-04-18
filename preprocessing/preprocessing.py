@@ -71,11 +71,12 @@ def rating_positive(data: pd.DataFrame, positive: List[str]) -> pd.DataFrame:
     for entry in data["text"]:
         for sub in positive:
             if entry.find(sub) != -1:
-               flag = 1
+                flag = 1
         res.append(flag)
         flag = 0
     data["positive_rating"] = res
     return data
+
 
 # def start_sentence(data: pd.DataFrame, start: List[str], title: str) -> pd.DataFrame:
 #     res: list[int] = []
@@ -198,9 +199,11 @@ def main():
     # data = start_sentence(data, ["I"], "start_with_I")
 
     # data = count_uppercase_words(data, ["I", "A"])
-    
-    data = rating_positive(data, ["7/10", "8/10", "9/10","10/10", "10 out of 10", "10+", "10 plus"])
-    
+
+    data = rating_positive(
+        data, ["7/10", "8/10", "9/10", "10/10", "10 out of 10", "10+", "10 plus"]
+    )
+
     cols = data.columns.tolist()
 
     pred = data["class"]
