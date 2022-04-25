@@ -1,0 +1,468 @@
+@relation first_attribute-weka.filters.unsupervised.instance.Resample-S1-Z30.0-weka.filters.unsupervised.instance.Resample-S1-Z50.0-no-replacement-V
+
+@attribute source string
+@attribute text string
+@attribute class {0,1}
+@attribute sentence_length numeric
+@attribute positive_words numeric
+@attribute negative_words numeric
+@attribute punctuation_sum numeric
+@attribute punctuation_dot numeric
+@attribute punctuation_comma numeric
+@attribute punctuation_exclamation numeric
+@attribute punctuation_question numeric
+@attribute negation numeric
+@attribute start_with_I numeric
+@attribute upper_case numeric
+
+@data
+imdb,'Still it\"s quite interesting and entertaining to follow.',1,8,2,0,1,1,0,0,0,0,0,0
+amazon,'The design is very good.4.',1,5,0,0,2,2,0,0,0,0,0,0
+yelp,'In fact I\"m going to round up to 4 stars, just because she was so awesome.',1,16,0,0,2,1,1,0,0,0,0,0
+imdb,'Highly entertaining at all angles.',1,5,1,0,1,1,0,0,0,0,0,0
+amazon,'It\"s AGGRAVATING!',0,2,0,0,1,0,0,1,0,0,0,1
+amazon,'I am going to have to be the first to negatively review this product.',0,14,0,0,1,1,0,0,0,0,1,0
+amazon,'Bad Reception.',0,2,0,1,1,1,0,0,0,0,0,0
+amazon,'Overall, I would recommend this phone over the new Walkman.',1,10,1,0,2,1,1,0,0,0,0,0
+imdb,'But even the talented Carrell can\"t save this.',0,8,1,0,1,1,0,0,0,0,0,0
+yelp,'Needless to say, we will never be back here again.',0,10,0,1,2,1,1,0,0,0,0,0
+imdb,'Okay, I like to consider myself a fair critic, so I\"ll give credit where credit\"s due--the creature effects were actually pretty cool.',1,22,3,0,3,1,2,0,0,0,0,0
+amazon,'After charging overnight, these batteries work great.',1,7,1,0,2,1,1,0,0,0,0,0
+imdb,'The telephone repair man was really funny and his reactions to the nuts and bitchy boss were truly genuine.',1,19,0,2,1,1,0,0,0,0,0,0
+yelp,'I was disgusted because I was pretty sure that was human hair.',0,12,1,1,1,1,0,0,0,0,1,0
+yelp,'Our server was fantastic and when he found out the wife loves roasted garlic and bone marrow, he added extra to our meal and another marrow to go!',1,28,1,0,2,0,1,1,0,0,0,0
+amazon,'This product is very High quality Chinese CRAP!!!!!!',0,8,0,0,6,0,0,6,0,0,0,1
+amazon,'THey are so cool!',1,4,0,0,1,0,0,1,0,0,0,0
+imdb,'The cinematography is simply stunning (to say the least) and the fx are nothing if not state-of-the-art.',1,17,1,0,1,1,0,0,0,1,0,0
+amazon,'Piece of trash.',0,3,0,0,1,1,0,0,0,0,0,0
+yelp,'This place was such a nice surprise!',1,7,1,0,1,0,0,1,0,0,0,0
+yelp,'Best tacos in town by far!!',1,6,1,0,2,0,0,2,0,0,0,0
+yelp,'We had fantastic service, and were pleased by the atmosphere.',1,10,1,0,2,1,1,0,0,0,0,0
+yelp,'Fantastic food!',1,2,0,0,1,0,0,1,0,0,0,0
+imdb,'If you are looking for a movie with a terrific cast, some good music(including a Shirley Jones rendition of \"The Way You Look Tonight\"), and an uplifting ending, give this one a try.',1,33,3,0,4,1,3,0,0,0,0,0
+amazon,'Think it over when you plan to own this one!This sure is the last MOTO phone for me!',0,18,0,0,2,0,0,2,0,0,0,1
+yelp,'The ambiance was incredible.',1,4,0,0,1,1,0,0,0,0,0,0
+yelp,'Interesting decor.',1,2,1,0,1,1,0,0,0,0,0,0
+imdb,'Very little music or anything to speak of.',0,8,0,0,1,1,0,0,0,0,0,0
+amazon,'Awsome Device Works Great!!.',1,4,2,0,3,1,0,2,0,0,0,0
+yelp,'The potato chip order was sad... I could probably count how many chips were in that box and it was probably around 12.',0,23,0,0,4,4,0,0,0,0,0,0
+yelp,'I ordered the Voodoo pasta and it was the first time I\"d had really excellent pasta since going gluten free several years ago.',1,23,2,0,1,1,0,0,0,0,1,0
+imdb,'Trouble is, the writing and directing make it impossible to establish those things that make a movie watchable, like character, story, theme and so on.',0,25,1,2,5,1,4,0,0,0,0,0
+yelp,'I would not recommend this place.',0,6,1,0,1,1,0,0,0,1,1,0
+amazon,'If you have several dozen or several hundred contacts, then imagine the fun of sending each of them one by one.',0,21,1,0,2,1,1,0,0,0,0,0
+imdb,'Definitely worth checking out.',1,4,1,0,1,1,0,0,0,0,0,0
+imdb,'The movie seemed a little slow at first.',0,8,0,1,1,1,0,0,0,0,0,0
+yelp,'Took an hour to get our food only 4 tables in restaurant my food was Luke warm, Our sever was running around like he was totally overwhelmed.',0,27,1,1,2,1,1,0,0,0,0,0
+amazon,'its a little geeky but i think thats its sex on toast and it rocks and oozes sex right down to its battery embedded sleek stylish leather case.',1,28,4,0,1,1,0,0,0,0,0,0
+yelp,'The dining space is tiny, but elegantly decorated and comfortable.',1,10,1,0,2,1,1,0,0,0,0,0
+imdb,'Very disappointed and wondered how it could be in the Oscar shortlist.',0,12,0,1,1,1,0,0,0,0,0,0
+imdb,'I do think Tom Hanks is a good actor.',1,9,1,0,1,1,0,0,0,0,1,0
+imdb,'This is a witty and delightful adaptation of the Dr Seuss book, brilliantly animated by UPA\"s finest and thoroughly deserving of its Academy Award.',1,24,5,0,2,1,1,0,0,0,0,0
+imdb,'The stories were powerful explorations of the nature of man and of art.',1,13,1,0,1,1,0,0,0,0,0,0
+amazon,'Not only will it drain your player, but may also potentially fry it.',0,13,0,1,2,1,1,0,0,1,0,0
+yelp,'The steaks are all well trimmed and also perfectly cooked.',1,10,2,0,1,1,0,0,0,0,0,0
+imdb,'This is a chilly, unremarkable movie about an author living/working in a chilly abstruse culture.',0,15,0,1,2,1,1,0,0,0,0,0
+imdb,'The story unfolds in 18th century Jutland and the use of period music played on period instruments is just one more fine touch.',1,23,1,0,1,1,0,0,0,0,0,0
+amazon,'Good Quality.',1,2,1,0,1,1,0,0,0,0,0,0
+yelp,'The grilled chicken was so tender and yellow from the saffron seasoning.',1,12,1,0,1,1,0,0,0,0,0,0
+imdb,'I don\"t know exactly what it is about this movie, but we latched on to this endearing movie and it has become a special part of our family\"s memories.',1,29,1,0,2,1,1,0,0,0,1,0
+amazon,'Rip off---- Over charge shipping.',0,5,0,1,1,1,0,0,0,0,0,0
+yelp,'Everything was gross.',0,3,0,0,1,1,0,0,0,0,0,0
+amazon,'Bluetooth does not work, phone locks up, screens just flash up and now it just makes calls randomly while in my pocket locked.',0,23,0,1,3,1,2,0,0,1,0,0
+imdb,'GO AND SEE IT!',1,4,0,0,1,0,0,1,0,0,0,4
+imdb,'The kids are very cool too.',1,6,1,0,1,1,0,0,0,0,0,0
+yelp,'When I opened the sandwich, I was impressed, but not in a good way.',0,14,1,0,3,1,2,0,0,1,0,0
+amazon,'The phone gets EXTREMELY HOT!',0,5,0,0,1,0,0,1,0,0,0,2
+yelp,'This is the place where I first had pho and it was amazing!!',1,13,0,0,2,0,0,2,0,0,0,0
+imdb,'Cinematography noteworthy including fine views of Barcelona and its famed Gaudi towers.',1,12,3,0,1,1,0,0,0,0,0,0
+yelp,'On three different occasions I asked for well done or medium well, and all three times I got the bloodiest piece of meat on my plate.',0,26,1,0,2,1,1,0,0,0,0,0
+amazon,'Great software for Motorolas.',1,4,1,0,1,1,0,0,0,0,0,0
+imdb,'An instant classic, with a great soundtrack and a catchy song during the ending credits.',1,15,2,0,2,1,1,0,0,0,0,0
+amazon,'Its not user friendly.',0,4,0,0,1,1,0,0,0,1,0,0
+amazon,'I love the ringtones because they are so upbeat!',1,9,1,0,1,0,0,1,0,0,1,0
+yelp,'the potatoes were great and so was the biscuit.',1,9,1,0,1,1,0,0,0,0,0,0
+yelp,'Appetite instantly gone.',0,3,1,0,1,1,0,0,0,0,0,0
+yelp,'The meat was pretty dry, I had the sliced brisket and pulled pork.',0,13,1,0,2,1,1,0,0,0,0,0
+yelp,'Everything was perfect the night we were in.',1,8,1,0,1,1,0,0,0,0,0,0
+amazon,'Would recommend this item.',1,4,1,0,1,1,0,0,0,0,0,0
+imdb,'Whatever prompted such a documentary is beyond me!',0,8,0,0,1,0,0,1,0,0,0,0
+yelp,'Worst food/service I\"ve had in a while.',0,7,0,1,1,1,0,0,0,0,0,0
+imdb,'I hate writing bad reviews about films - especially those in which I really like the star - but this film is so bad I don\"t believe for one second that anyone could have been proud of it.',0,38,2,3,1,1,0,0,0,0,1,0
+amazon,'much better than the hard plastic cases.',1,7,1,1,1,1,0,0,0,0,0,0
+yelp,'The salad had just the right amount of sauce to not over power the scallop, which was perfectly cooked.',1,19,2,0,2,1,1,0,0,1,0,0
+amazon,'W810i is just SUPERB.',1,4,0,0,1,1,0,0,0,0,0,1
+yelp,'The portion was huge!',1,4,0,0,1,0,0,1,0,0,0,0
+amazon,'There\"s a horrible tick sound in the background on all my calls that I have never experienced before.',0,18,0,1,1,1,0,0,0,0,0,0
+yelp,'My friend loved the salmon tartar.',1,6,1,0,1,1,0,0,0,0,0,0
+yelp,'I\"d love to go back.',1,5,1,0,1,1,0,0,0,0,0,0
+imdb,'This was such an awesome movie that i bought it off of Ebay.',1,13,1,0,1,1,0,0,0,0,0,0
+amazon,'Too bad you have to pay up to $$$ a month for the service!',0,14,0,1,1,0,0,1,0,0,0,0
+yelp,'Cant say enough good things about this place.',1,8,2,0,1,1,0,0,0,0,0,0
+amazon,'Excellent sound quality.',1,3,1,0,1,1,0,0,0,0,0,0
+yelp,'Service is quick and even \"to go\" orders are just like we like it!',1,14,2,0,1,0,0,1,0,0,0,0
+yelp,'Left very frustrated.',0,3,0,0,1,1,0,0,0,0,0,0
+amazon,'I got the car charger and not even after a week the charger was broken...I went to plug it in and it started smoking.',0,24,0,0,4,4,0,0,0,1,1,0
+yelp,'Just don\"t know why they were so slow.',0,8,0,0,1,1,0,0,0,0,0,0
+imdb,'Not too screamy not to masculine but just right.',1,9,0,0,1,1,0,0,0,2,0,0
+amazon,'Its the best headset I have used.',1,7,1,0,1,1,0,0,0,0,0,0
+yelp,'The server was very negligent of our needs and made us feel very unwelcome... I would not suggest this place!',0,20,0,1,4,3,0,1,0,1,0,0
+yelp,'2 times - Very Bad Customer Service !',0,8,0,1,1,0,0,1,0,0,0,0
+amazon,'I would highly recommend this product.',1,6,1,0,1,1,0,0,0,0,1,0
+yelp,'And the beans and rice were mediocre at best.',0,9,0,1,1,1,0,0,0,0,0,0
+imdb,'(very serious spoilers) this movie was a huge disappointment.',0,9,0,0,1,1,0,0,0,0,0,0
+yelp,'He deserves 5 stars.',1,4,0,0,1,1,0,0,0,0,0,0
+imdb,'You could drive a semi truck into these holes!',0,9,0,0,1,0,0,1,0,0,0,0
+imdb,'Frankly, after Cotton club and Unfaithful, it was kind of embarrassing to watch Lane and Gere in this film, because it is BAD.',0,23,0,1,4,1,3,0,0,0,0,1
+amazon,WORTHWHILE.,1,1,0,0,1,1,0,0,0,0,0,1
+amazon,'I wish I could return the unit and get back my money.',0,12,0,0,1,1,0,0,0,0,1,0
+amazon,'Battery is terrible.',0,3,0,0,1,1,0,0,0,0,0,0
+yelp,'Crust is not good.',0,4,0,0,1,1,0,0,0,1,0,0
+amazon,'Excellent product for the price.',1,5,1,0,1,1,0,0,0,0,0,0
+imdb,'The only suspense I was feeling was the frustration at just how retarded the girls were.',0,16,0,2,1,1,0,0,0,0,0,0
+amazon,'I found the product to be easy to set up and use.',1,12,1,0,1,1,0,0,0,0,1,0
+amazon,'Pretty piece of junk.',0,4,1,0,1,1,0,0,0,0,0,0
+amazon,'Reversible plug works great.',1,4,1,0,1,1,0,0,0,0,0,0
+imdb,'What this film lacks is a convincing script.',0,8,1,1,1,1,0,0,0,0,0,0
+yelp,'I won\"t try going back there even if it\"s empty.',0,10,0,0,1,1,0,0,0,0,1,0
+yelp,'And the drinks are WEAK, people!',0,6,0,0,2,0,1,1,0,0,0,1
+yelp,'not even a \"hello, we will be right with you.\"',0,10,1,0,2,1,1,0,0,1,0,0
+yelp,'Hell no will I go back',0,6,0,1,0,0,0,0,0,1,0,0
+yelp,'Their steaks are 100\% recommended!',1,5,0,0,1,0,0,1,0,0,0,0
+amazon,'Audio Quality is poor, very poor.',0,6,0,0,2,1,1,0,0,0,0,0
+yelp,'Best service and food ever, Maria our server was so good and friendly she made our day.',1,17,3,0,2,1,1,0,0,0,0,0
+amazon,'(It works!)',1,2,0,0,1,0,0,1,0,0,0,0
+amazon,'Waste of money.',0,3,0,1,1,1,0,0,0,0,0,0
+yelp,'In an interesting part of town, this place is amazing.',1,10,1,0,2,1,1,0,0,0,0,0
+imdb,'It ranks highly as a great noir-crime-drama, incredible performances by Belmondo and Lino Ventura.',1,14,2,0,2,1,1,0,0,0,0,0
+amazon,'i\"m glad i found this product on amazon it is hard to find, it wasn\"t high priced.',1,17,1,1,2,1,1,0,0,0,0,0
+imdb,'Okay, I like to consider myself a fair critic, so I\"ll give credit where credit\"s due--the creature effects were actually pretty cool.',1,22,3,0,3,1,2,0,0,0,0,0
+imdb,'The film deserves strong kudos for taking this stand, for having exceptional acting from its mostly lesser-known cast and for the super-intelligent script that doesn\"t insult the audience or take the easy way out when it comes to white racism.',1,40,4,2,2,1,1,0,0,0,0,0
+yelp,'Great brunch spot.',1,3,1,0,1,1,0,0,0,0,0,0
+amazon,'This PDA rocks.',1,3,0,0,1,1,0,0,0,0,0,1
+yelp,'2 times - Very Bad Customer Service !',0,8,0,1,1,0,0,1,0,0,0,0
+imdb,'I am so pleased to know such a modern day genius is out there , letting is passion for Art drive him and taking us as an audience with him.',1,30,4,0,2,1,1,0,0,0,1,0
+amazon,'If you plan to use this in a car forget about it.',0,12,0,0,1,1,0,0,0,0,0,0
+yelp,'Very disappointing!!!',0,2,0,0,3,0,0,3,0,0,0,0
+amazon,'Comfortable fit - you need your headset to be comfortable for at least an hour at a time, if not for an entire day.',1,24,2,0,2,1,1,0,0,1,0,0
+imdb,'Loved the casting of Jimmy Buffet as the science teacher.',1,10,1,0,1,1,0,0,0,0,0,0
+amazon,'It clicks into place in a way that makes you wonder how long that mechanism would last.',0,17,1,0,1,1,0,0,0,0,0,0
+imdb,'Even if you love bad movies, do not watch this movie.',0,11,1,1,2,1,1,0,0,1,0,0
+imdb,'Yet, I enjoy watching it.',1,5,1,0,2,1,1,0,0,0,0,0
+amazon,'I love the camera, it\"s really pretty good quality.',1,9,3,0,2,1,1,0,0,0,1,0
+amazon,'Comfortable fit - you need your headset to be comfortable for at least an hour at a time, if not for an entire day.',1,24,2,0,2,1,1,0,0,1,0,0
+imdb,'His use of the colours of the French flag in the three films was nothing short of incredible, every shot, every scene was like a work of art.',1,28,2,0,3,1,2,0,0,0,0,0
+yelp,'Went in for happy hour, great list of wines.',1,9,2,0,2,1,1,0,0,0,0,0
+yelp,'Pricing is a bit of a concern at Mellow Mushroom.',0,10,0,1,1,1,0,0,0,0,0,0
+imdb,'It came free with a DVD player I bought but I still turned the thing off halfway through because I was embarrassed for Howell.',0,24,1,0,1,1,0,0,0,0,0,1
+yelp,'Don\"t waste your time here.',0,5,0,1,1,1,0,0,0,0,0,0
+yelp,'The chipolte ranch dipping sause was tasteless, seemed thin and watered down with no heat.',0,15,0,0,2,1,1,0,0,1,0,0
+imdb,'I mean, in a realistic world, she would NEVER have gotten into that ballet repertory... The whole thing was quite pathetic.',0,21,1,0,6,4,2,0,0,0,1,1
+amazon,'People couldnt hear me talk and I had to pull out the earphone and talk on the phone.',0,18,0,0,1,1,0,0,0,0,0,0
+imdb,'The cast is good.',1,4,0,0,1,1,0,0,0,0,0,0
+imdb,'Everything from acting to cinematography was solid.',1,7,0,0,1,1,0,0,0,0,0,0
+imdb,'You could drive a semi truck into these holes!',0,9,0,0,1,0,0,1,0,0,0,0
+amazon,'We would recommend these to others.',1,6,1,0,1,1,0,0,0,0,0,0
+imdb,'This film highlights the fundamental flaws of the legal process, that it\"s not about discovering guilt or innocence, but rather, is about who presents better in court.',1,27,1,2,4,1,3,0,0,1,0,0
+imdb,'MANNA FROM HEAVEN is a terrific film that is both predictable and unpredictable at the same time.',1,17,2,1,1,1,0,0,0,0,0,3
+yelp,'Pricing is a bit of a concern at Mellow Mushroom.',0,10,0,1,1,1,0,0,0,0,0,0
+imdb,'My rating: just 3 out of 10.',0,7,0,0,1,1,0,0,0,0,0,0
+amazon,'Kind of flops around.',0,4,0,0,1,1,0,0,0,0,0,0
+imdb,'This movie is great--especially if you enjoy visual arts.',1,9,1,0,1,1,0,0,0,0,0,0
+amazon,'They keep getting better and better (this is my third one and I\"ve had numerous Palms too).',1,17,2,0,1,1,0,0,0,0,0,0
+amazon,'I found this product to be waaay too big.',0,9,0,0,1,1,0,0,0,0,1,0
+yelp,'We\"ve tried to like this place but after 10+ times I think we\"re done with them.',0,16,1,0,1,1,0,0,0,0,0,0
+amazon,'Highly recommend for any one who has a blue tooth phone.',1,11,1,0,1,1,0,0,0,0,0,0
+yelp,'In summary, this was a largely disappointing dining experience.',0,9,0,1,2,1,1,0,0,0,0,0
+amazon,'You have to hold the phone at a particular angle for the other party to hear you clearly.',0,18,0,0,1,1,0,0,0,0,0,0
+amazon,'As many people complained, I found this headset\"s microphone was very weak.',0,12,0,0,2,1,1,0,0,0,0,0
+yelp,'I won\"t be back.',0,4,0,0,1,1,0,0,0,0,1,0
+imdb,'It\"s as continuously beautiful to look at as a Bertolucci, but the relationships here are more convincing and the narrative more engaging than some of that master\"s work.',1,28,3,0,2,1,1,0,0,0,0,0
+amazon,'Nice quality build, unlike some cheap s*** out there.',1,9,1,1,2,1,1,0,0,0,0,0
+yelp,'5 stars for the brick oven bread app!',1,8,0,0,1,0,0,1,0,0,0,0
+yelp,'I have eaten here multiple times, and each time the food was delicious.',1,13,0,0,2,1,1,0,0,0,1,0
+amazon,'Great phone.',1,2,1,0,1,1,0,0,0,0,0,0
+imdb,'Kieslowski never ceases to amaze me.',1,6,1,0,1,1,0,0,0,0,0,0
+yelp,'Their rotating beers on tap is also a highlight of this place.',1,12,0,0,1,1,0,0,0,0,0,0
+amazon,'stay away from this store, be careful.',0,7,0,0,2,1,1,0,0,0,0,0
+amazon,'The handsfree part works fine, but then the car tries to download the address book, and the Treo reboots.Overall, I still rate this device high.',1,25,1,0,5,2,3,0,0,0,0,0
+amazon,'I had absolutely no problem with this headset linking to my 8530 Blackberry Curve!',1,14,0,1,1,0,0,1,0,1,1,0
+imdb,'I have seen many movies starring Jaclyn Smith, but my god this was one of her best, though it came out 12 years ago.',1,24,0,0,3,1,2,0,0,0,1,0
+yelp,'The service was extremely slow.',0,5,0,0,1,1,0,0,0,0,0,0
+amazon,'I like the fact that it rests lightly against your ear, rather than inside.',1,14,1,0,2,1,1,0,0,0,1,0
+imdb,'As they say in Canada, This is the fun game, aye.',1,11,1,0,3,1,2,0,0,0,0,0
+yelp,'We had so much to say about the place before we walked in that he expected it to be amazing, but was quickly disappointed.',0,24,0,0,2,1,1,0,0,0,0,0
+imdb,'The acting was bad.',0,4,0,0,1,1,0,0,0,0,0,0
+imdb,'I was bored throughout the whole damn thing.',0,8,0,2,1,1,0,0,0,0,1,0
+imdb,'Linda Cardellini is the only thing good in this film.',1,10,1,0,1,1,0,0,0,0,0,0
+yelp,'Went for lunch - service was slow.',0,7,0,0,1,1,0,0,0,0,0,0
+yelp,'Service is quick and even \"to go\" orders are just like we like it!',1,14,2,0,1,0,0,1,0,0,0,0
+amazon,'Very Displeased.',0,2,0,0,1,1,0,0,0,0,0,0
+amazon,'Excellent sound quality.',1,3,1,0,1,1,0,0,0,0,0,0
+yelp,'This place lacked style!!',0,4,0,1,2,0,0,2,0,0,0,0
+amazon,'The \"1.2\" mega pixel camera, being a part of a phone, is reasonably good7.',1,14,1,0,4,2,2,0,0,0,0,0
+imdb,'Exceptionally bad!',0,2,1,0,1,0,0,1,0,0,0,0
+imdb,'I\"m glad the film didn\"t go for the most obvious choice, as a lesser film certainly would have.',1,18,1,0,2,1,1,0,0,0,0,0
+amazon,'I got it because it was so small and adorable.',1,10,0,0,1,1,0,0,0,0,1,0
+imdb,'This movie was kind of long in length, but I enjoyed every minute of it.',1,15,1,0,2,1,1,0,0,0,0,0
+amazon,'The battery runs down quickly.',0,5,0,0,1,1,0,0,0,0,0,0
+imdb,'Personally, I think it shows that people should learn to find a compromise them self without involving other people into issue.',1,21,0,0,2,1,1,0,0,0,0,0
+yelp,'I probably won\"t be back, to be honest.',0,8,0,0,2,1,1,0,0,0,1,0
+yelp,'the potatoes were great and so was the biscuit.',1,9,1,0,1,1,0,0,0,0,0,0
+amazon,'The case is great and works fine with the 680.',1,10,3,0,1,1,0,0,0,0,0,0
+imdb,'Actually, the graphics were good at the time.',1,8,1,0,2,1,1,0,0,0,0,0
+amazon,'Does Not Work.',0,3,0,0,1,1,0,0,0,1,0,0
+imdb,'It is an insane game.',1,5,0,1,1,1,0,0,0,0,0,0
+yelp,'OMG, the food was delicioso!',1,5,0,0,2,0,1,1,0,0,0,1
+amazon,'Big Disappointment with calendar sync.',0,5,0,1,1,1,0,0,0,0,0,0
+amazon,'AFTER ARGUING WITH VERIZON REGARDING THE DROPPED CALLS WE RETURNED THE PHONES AFTER TWO DAYS.',0,15,0,0,1,1,0,0,0,0,0,15
+amazon,'Items stated as included from the description ARE NOT INCLUDED.',0,10,0,0,1,1,0,0,0,1,0,3
+imdb,'\"You\"ll love it!',1,3,1,0,1,0,0,1,0,0,0,0
+imdb,'It even has its sweet moments.',1,6,1,0,1,1,0,0,0,0,0,0
+imdb,'This film tries to be a serious and sophisticated thriller/horror flick and it fails miserably.',0,15,1,1,1,1,0,0,0,0,0,0
+yelp,'Best Buffet in town, for the price you cannot beat it.',1,11,1,0,2,1,1,0,0,0,0,0
+amazon,'Definitely a bargain.',1,3,0,0,1,1,0,0,0,0,0,0
+yelp,'As a sushi lover avoid this place by all means.',0,10,1,0,1,1,0,0,0,0,0,0
+amazon,'WELL IM SATISFIED.',1,3,1,0,1,1,0,0,0,0,0,3
+yelp,'I really enjoyed eating here.',1,5,1,0,1,1,0,0,0,0,1,0
+amazon,'It was a great phone.',1,5,1,0,1,1,0,0,0,0,0,0
+imdb,'Babie Bop is very cute.',1,5,0,0,1,1,0,0,0,0,0,0
+imdb,'I really hope the team behind this movie makes more movies, and that they will continue to do so in their own, some kinda weird style.',1,26,0,1,3,1,2,0,0,0,1,0
+imdb,'Fans of the genre will be in heaven.',1,8,1,0,1,1,0,0,0,0,0,0
+amazon,'Horrible, horrible protector.',0,3,0,1,2,1,1,0,0,0,0,0
+yelp,'But then they came back cold.',0,6,0,0,1,1,0,0,0,0,0,0
+yelp,'Just as good as when I had it more than a year ago!',1,13,1,0,1,0,0,1,0,0,0,0
+yelp,'Needless to say, we will never be back here again.',0,10,0,1,2,1,1,0,0,0,0,0
+amazon,'WARNING - DO NOT BUY!!.',0,5,0,1,3,1,0,2,0,1,0,4
+yelp,'I love the decor with the Chinese calligraphy wall paper.',1,10,1,0,1,1,0,0,0,0,1,0
+amazon,'Clear crisp sound.',1,3,2,0,1,1,0,0,0,0,0,0
+amazon,'Good , works fine.',1,4,2,0,2,1,1,0,0,0,0,0
+imdb,'It\"s too bad that everyone else involved didn\"t share Crowe\"s level of dedication to quality, for if they did, we\"d have a far better film on our hands than this sub-par mess.',0,32,1,2,3,1,2,0,0,0,0,0
+imdb,'I don\"t know what happened in Season Five, what a mess.',0,11,0,0,2,1,1,0,0,0,1,0
+amazon,'The only thing that I think could improve is the sound leaks out from the headset.',0,16,1,1,1,1,0,0,0,0,0,0
+imdb,'If you act in such a film, you should be glad that you\"re gonna drift away from earth as far as possible!',0,22,1,0,2,0,1,1,0,0,0,0
+yelp,'It was equally awful.',0,4,0,0,1,1,0,0,0,0,0,0
+imdb,'One of the best mexican movies ever!, and one of the less understood, even by mexican themselves, no matter how identified the should have felt with it.',1,27,1,0,5,1,3,1,0,1,0,0
+amazon,'It\"s been my choice headset for years.Great sound; good volume; good noise cancellation.',1,13,2,1,2,2,0,0,0,0,0,0
+yelp,'I can\"t wait to go back.',1,6,0,0,1,1,0,0,0,0,1,0
+amazon,'All three broke within two months of use.',0,8,0,1,1,1,0,0,0,0,0,0
+yelp,'Just as good as when I had it more than a year ago!',1,13,1,0,1,0,0,1,0,0,0,0
+amazon,'I especially love the long battery life.',1,7,1,0,1,1,0,0,0,0,1,0
+imdb,'Julian Fellowes has triumphed again.',1,5,0,0,1,1,0,0,0,0,0,0
+yelp,'An excellent new restaurant by an experienced Frenchman.',1,8,1,0,1,1,0,0,0,0,0,0
+imdb,'That\"s how I\"d describe this painfully dreary time-waster of a film.',0,11,0,2,1,1,0,0,0,0,0,0
+amazon,'I give Wirefly 1 star.I will contact Cingular/AT&T; and inform them of this practice.',0,14,0,0,2,2,0,0,0,0,1,0
+imdb,'One character is totally annoying with a voice that gives me the feeling of fingernails on a chalkboard.',0,18,0,1,1,1,0,0,0,0,0,0
+amazon,'Phone is sturdy as all nokia bar phones are.',1,9,1,0,1,1,0,0,0,0,0,0
+yelp,'Everything was perfect the night we were in.',1,8,1,0,1,1,0,0,0,0,0,0
+yelp,'So they performed.',1,3,0,0,1,1,0,0,0,0,0,0
+imdb,'I hate movies like that.',0,5,1,1,1,1,0,0,0,0,1,0
+amazon,'I have tried these cables with my computer and my iPod and it works just fine.',1,16,1,0,1,1,0,0,0,0,1,0
+amazon,'.... Item arrived quickly and works great with my Metro PCS Samsung SCH-r450 slider phone and Sony Premium Sound in ear plugs.',1,22,2,0,5,5,0,0,0,0,0,1
+amazon,'I love this phone , It is very handy and has a lot of features .',1,16,2,0,2,1,1,0,0,0,1,0
+imdb,'I would give this television series a 10 plus if i could.',1,12,0,0,1,1,0,0,0,0,1,0
+imdb,'Attempting artiness with black & white and clever camera angles, the movie disappointed - became even more ridiculous - as the acting was poor and the plot and lines almost non-existent.',0,31,1,4,2,1,1,0,0,0,0,0
+yelp,'For sushi on the Strip, this is the place to go.',1,11,0,0,2,1,1,0,0,0,0,0
+yelp,'WILL NEVER EVER GO BACK AND HAVE TOLD MANY PEOPLE WHAT HAD HAPPENED.',0,13,0,0,1,1,0,0,0,0,0,13
+yelp,'She was quite disappointed although some blame needs to be placed at her door.',0,14,0,2,1,1,0,0,0,0,0,0
+yelp,'CONCLUSION: Very filling meals.',1,4,0,0,1,1,0,0,0,0,0,1
+amazon,'Great phone.',1,2,1,0,1,1,0,0,0,0,0,0
+amazon,'Worst ever.',0,2,0,1,1,1,0,0,0,0,0,0
+imdb,'This is not movie-making.',0,4,0,0,1,1,0,0,0,1,0,0
+yelp,'Thoroughly disappointed!',0,2,0,0,1,0,0,1,0,0,0,0
+yelp,'For service, I give them no stars.',0,7,0,0,2,1,1,0,0,1,0,0
+imdb,'The warmth it generates is in contrast to its austere backdrop.',1,11,1,1,1,1,0,0,0,0,0,0
+imdb,'Generally; it just lacked imagination.',0,5,0,1,1,1,0,0,0,0,0,0
+imdb,'Also notable is John Bailey\"s fine crisp beautifully colored cinematography and the great production design & costumes by Eiko Ishioka who went on to do the memorable costumes for Coppola\"s Dracula for which she received a well deserved Oscar.',1,39,6,0,1,1,0,0,0,0,0,0
+yelp,'Cant say enough good things about this place.',1,8,2,0,1,1,0,0,0,0,0,0
+imdb,') very bad performance plays Angela Bennett, a computer expert who is at home all the time.',0,17,0,1,2,1,1,0,0,0,0,0
+amazon,'Motorola finally got the voice quality of a bluetooth headset right.',1,11,0,0,1,1,0,0,0,0,0,0
+yelp,'Owner\"s are really great people.!',1,5,1,0,2,1,0,1,0,0,0,0
+amazon,'Not as good as I had hoped.',0,7,1,0,1,1,0,0,0,1,0,0
+amazon,'Doesn\"t work at all.. I bougth it for my L7c and its not working.',0,14,1,0,3,3,0,0,0,1,0,0
+imdb,'Yes, I am simplifying things here for the sake of brevity, for this really is at the core of the problems with this film - it has too much going on without any real, fulfilling explanation.',0,36,1,1,4,1,3,0,0,0,0,0
+amazon,'O my gosh the best phone I have ever had.',1,10,1,0,1,1,0,0,0,0,0,1
+yelp,'And then tragedy struck.',0,4,0,1,1,1,0,0,0,0,0,0
+yelp,'Also there are combos like a burger, fries, and beer for 23 which is a decent deal.',1,17,2,0,3,1,2,0,0,0,0,0
+imdb,'Secondly, Hitchcock pretty much perfected the thriller and chase movie.',1,10,1,0,2,1,1,0,0,0,0,0
+amazon,'Poor sound quality.',0,3,0,1,1,1,0,0,0,0,0,0
+yelp,'We asked for the bill to leave without eating and they didn\"t bring that either.',0,15,0,0,1,1,0,0,0,0,0,0
+amazon,'This phone might well be the worst I\"ve ever had in any brand.',0,13,1,1,1,1,0,0,0,0,0,0
+amazon,'Very disappointed in AccessoryOne.',0,4,0,1,1,1,0,0,0,0,0,0
+yelp,'The Burrittos Blah!',0,3,0,0,1,0,0,1,0,0,0,0
+yelp,'Great place to relax and have an awesome burger and beer.',1,11,2,0,1,1,0,0,0,0,0,0
+imdb,'And the accents are absolutely abysmal!',0,6,0,0,1,0,0,1,0,0,0,0
+amazon,'If you are looking for a good quality Motorola Headset keep looking, this isn\"t it.',0,15,1,0,2,1,1,0,0,0,0,0
+imdb,'I rather enjoyed it.',1,4,1,0,1,1,0,0,0,0,1,0
+amazon,'Good value, works fine - power via USB, car, or wall outlet.',1,12,3,0,4,1,3,0,0,0,0,1
+imdb,'This movie suffered because of the writing, it needed more suspense.',0,11,0,1,2,1,1,0,0,0,0,0
+amazon,'It\"s AGGRAVATING!',0,2,0,0,1,0,0,1,0,0,0,1
+amazon,'Saggy, floppy piece of junk.',0,5,0,0,2,1,1,0,0,0,0,0
+amazon,'I know that sounds funny, but to me it seemed like sketchy technology that wouldn\"t work well.Well, this one works great.',1,21,3,1,4,2,2,0,0,0,1,0
+amazon,'Much less than the jawbone I was going to replace it with.',1,12,0,0,1,1,0,0,0,0,0,0
+amazon,'As I said above....PRETTY USELESS!',0,5,0,0,5,4,0,1,0,0,0,1
+yelp,'Service is quick and even \"to go\" orders are just like we like it!',1,14,2,0,1,0,0,1,0,0,0,0
+yelp,'I\"m not impressed with the concept or the food.',0,9,1,0,1,1,0,0,0,1,0,0
+imdb,'A piece of cinematic garbage captured on celluloid.',0,8,0,1,1,1,0,0,0,0,0,0
+amazon,'I ordered this for sony Ericsson W810i but I think it only worked once (thats when I first used it).',0,20,1,0,1,1,0,0,0,0,1,0
+yelp,'I was seated immediately.',1,4,0,0,1,1,0,0,0,0,1,0
+imdb,'I hate movies like that.',0,5,1,1,1,1,0,0,0,0,1,0
+yelp,'I\"m not eating here!',0,4,0,0,1,0,0,1,0,1,0,0
+amazon,'It is cheap, and it feel and look just as cheap.',0,11,0,0,2,1,1,0,0,0,0,0
+imdb,'This movie is also revealing.',1,5,0,0,1,1,0,0,0,0,0,0
+yelp,'Owner\"s are really great people.!',1,5,1,0,2,1,0,1,0,0,0,0
+amazon,'Great Value.',1,2,1,0,1,1,0,0,0,0,0,0
+amazon,'Display is excellent and camera is as good as any from that year.',1,13,2,0,1,1,0,0,0,0,0,0
+imdb,'Why was this film made?',0,5,0,0,1,0,0,0,1,0,0,0
+imdb,':) Anyway, the plot flowed smoothly and the male-bonding scenes were a hoot.',1,13,1,1,2,1,1,0,0,0,0,0
+yelp,'We\"d definitely go back here again.',1,6,0,0,1,1,0,0,0,0,0,0
+imdb,'The film gives meaning to the phrase, \"Never in the history of human conflict has so much been owed by so many to so few.',1,25,0,1,2,1,1,0,0,0,0,0
+imdb,'I really liked that.',1,4,1,0,1,1,0,0,0,0,1,0
+yelp,'This is a disgrace.',0,4,0,0,1,1,0,0,0,0,0,0
+imdb,'And I forgot: The Casting here i superb, with Trond Fausa Aurvåg being perfect in the role as the Bothersome Man, who doesn\"t understand where he is, what he is doing and why.',1,33,1,1,4,1,3,0,0,0,0,0
+imdb,'I think that it is a must see older John Wayne film.',1,12,0,0,1,1,0,0,0,0,1,0
+amazon,'The look of it is very sharp and the screen is nice and clear, with great graphics.',1,17,3,0,2,1,1,0,0,0,0,0
+yelp,'Also, I feel like the chips are bought, not made in house.',0,12,1,0,3,1,2,0,0,1,0,0
+imdb,'In other words, the content level of this film is enough to easily fill a dozen other films.',1,18,1,0,2,1,1,0,0,0,0,0
+amazon,'I plugged it in only to find out not a darn thing worked.',0,13,0,0,1,1,0,0,0,1,1,0
+imdb,'Bela Lugosi was totally extraneous, intoning odd lines.',0,8,0,1,2,1,1,0,0,0,0,0
+yelp,'If you\"re not familiar, check it out.',1,7,0,0,2,1,1,0,0,1,0,0
+amazon,'This is hands down the best phone I\"ve ever had.',1,10,1,0,1,1,0,0,0,0,0,0
+amazon,'T-Mobile has the best customer service anywhere.',1,7,1,0,1,1,0,0,0,0,0,0
+imdb,'Lot of holes in the plot: there\"s nothing about how he became the emperor; nothing about where he spend 20 years between his childhood and mature age.',0,27,1,0,1,1,0,0,0,0,0,0
+imdb,'Started watching this but didn\"t believe in any of the characters.',0,11,0,0,1,1,0,0,0,0,0,0
+imdb,'I liked the way Dustin Hoffman\"s character was ready to do just about everything to stay with his son.',1,19,2,0,1,1,0,0,0,0,1,0
+yelp,'We won\"t be going back.',0,5,0,0,1,1,0,0,0,0,0,0
+yelp,'Will never, ever go back.',0,5,0,0,2,1,1,0,0,0,0,0
+amazon,'Small, sleek, impressive looking, practical setup with ample storage in place.',1,11,2,0,4,1,3,0,0,0,0,0
+amazon,'I have only had it for a few weeks, but so far, so good.',1,14,0,0,3,1,2,0,0,0,1,0
+yelp,'I\"ve lived here since 1979 and this was the first (and last) time I\"ve stepped foot into this place.',0,19,0,0,1,1,0,0,0,0,0,0
+amazon,'While I managed to bend the leaf spring back in place, the metal now has enough stress that it will break on the next drop.',0,25,1,2,2,1,1,0,0,0,0,0
+imdb,'The result is a film that just don\"t look right.',0,10,0,0,1,1,0,0,0,0,0,0
+imdb,'Ursula Burton\"s portrayal of the nun is both touching and funny at the same time with out making fun of nuns or the church.',1,24,1,1,1,1,0,0,0,0,0,0
+yelp,'The service was great, even the manager came and helped with our table.',1,13,1,0,2,1,1,0,0,0,0,0
+imdb,'But the premise of the film was so ridiculous: that the President of the U.S.',0,15,0,0,2,2,0,0,0,0,0,1
+amazon,'The mic is great.',1,4,0,0,1,1,0,0,0,0,0,0
+imdb,'At a time when it seems that film animation has been dominated by Disney/Pixar\"s CGI masterpieces, it is both refreshing and comforting to know that Miyazaki is still relying on traditional hand-drawn animation to tell his charming and enchanting stories.',1,40,5,0,2,1,1,0,0,0,0,1
+yelp,'Do yourself a favor and stay away from this dish.',0,10,1,0,1,1,0,0,0,0,0,0
+yelp,'The service was poor and thats being nice.',0,8,0,1,1,1,0,0,0,0,0,0
+amazon,'Don\"t buy this product.',0,4,0,0,1,1,0,0,0,0,0,0
+yelp,'Best Buffet in town, for the price you cannot beat it.',1,11,1,0,2,1,1,0,0,0,0,0
+imdb,'And if that isn\"t enough of a mess of a movie for you - the picture is also marred with a constant use of studio sets and indoor exteriors.',0,29,1,1,1,1,0,0,0,0,0,0
+yelp,'Avoid at all cost!',0,4,0,0,1,0,0,1,0,0,0,0
+amazon,'Its reception is very very poor.',0,6,0,0,1,1,0,0,0,0,0,0
+yelp,'My ribeye steak was cooked perfectly and had great mesquite flavor.',1,11,2,0,1,1,0,0,0,0,0,0
+amazon,'Its well-designed and very sharp -- the blue is a very nice color.',1,13,2,0,1,1,0,0,0,0,0,0
+yelp,'The service here is fair at best.',0,7,1,0,1,1,0,0,0,0,0,0
+imdb,'there are so many problems i dont know where to start.',0,11,0,1,1,1,0,0,0,0,0,0
+yelp,'I loved the bacon wrapped dates.',1,6,1,0,1,1,0,0,0,0,1,0
+yelp,'Service was excellent and prices are pretty reasonable considering this is Vegas and located inside the Crystals shopping mall by Aria.',1,21,3,0,1,1,0,0,0,0,0,0
+yelp,'I will come back here every time I\"m in Vegas.',1,10,0,0,1,1,0,0,0,0,1,0
+yelp,'We had so much to say about the place before we walked in that he expected it to be amazing, but was quickly disappointed.',0,24,0,0,2,1,1,0,0,0,0,0
+yelp,'I ordered the Voodoo pasta and it was the first time I\"d had really excellent pasta since going gluten free several years ago.',1,23,2,0,1,1,0,0,0,0,1,0
+imdb,'Exceptionally bad!',0,2,1,0,1,0,0,1,0,0,0,0
+imdb,'I can think of no other film where something vitally important occurs every other minute.',1,15,1,0,1,1,0,0,0,1,1,0
+imdb,'For those that haven\"t seen it, don\"t waste your time!',0,10,0,1,2,0,1,1,0,0,0,0
+yelp,'They had a toro tartare with a cavier that was extraordinary and I liked the thinly sliced wagyu with white truffle.',1,21,2,0,1,1,0,0,0,0,0,0
+imdb,'The attractive set used throughout most of the film is an eye-pleasing gem.',1,13,1,0,1,1,0,0,0,0,0,0
+amazon,'Don\"t waste your money!.',0,4,0,1,2,1,0,1,0,0,0,0
+imdb,'The plot was the same as pretty much every other cheap horror.',0,12,1,2,1,1,0,0,0,0,0,0
+yelp,'The food was excellent and service was very good.',1,9,1,0,1,1,0,0,0,0,0,0
+amazon,'I had ordered a motorola data cable, got a very well finished and working product.',1,15,1,0,2,1,1,0,0,0,1,0
+amazon,'If you are looking for a good quality Motorola Headset keep looking, this isn\"t it.',0,15,1,0,2,1,1,0,0,0,0,0
+amazon,'Poor Talk Time Performance.',0,4,0,1,1,1,0,0,0,0,0,0
+amazon,'WELL IM SATISFIED.',1,3,1,0,1,1,0,0,0,0,0,3
+amazon,'The phone is sturdy and waterproof.',1,6,1,0,1,1,0,0,0,0,0,0
+yelp,'The service was terrible, food was mediocre.',0,7,0,0,2,1,1,0,0,0,0,0
+yelp,'At least think to refill my water before I struggle to wave you over for 10 minutes.',0,17,0,1,1,1,0,0,0,0,0,0
+yelp,'The first time I ever came here I had an amazing experience, I still tell people how awesome the duck was.',1,21,2,0,2,1,1,0,0,0,0,0
+amazon,'I don\"t think it would hold it too securly on your belt.',0,12,0,0,1,1,0,0,0,0,1,0
+yelp,DELICIOUS!!,1,1,0,0,2,0,0,2,0,0,0,1
+yelp,'What did bother me, was the slow service.',0,8,0,2,2,1,1,0,0,0,0,0
+imdb,'Still it\"s quite interesting and entertaining to follow.',1,8,2,0,1,1,0,0,0,0,0,0
+yelp,'I would avoid this place if you are staying in the Mirage.',0,12,0,0,1,1,0,0,0,0,1,0
+imdb,'You truly take this journey through the eyes and soul of a child.',1,13,0,0,1,1,0,0,0,0,0,0
+yelp,'Great place to eat, reminds me of the little mom and pop shops in the San Francisco Bay Area.',1,19,1,0,2,1,1,0,0,0,0,0
+amazon,'It\"s A PIECE OF CRAP!',0,5,0,0,1,0,0,1,0,0,0,3
+yelp,'Ambience is perfect.',1,3,0,0,1,1,0,0,0,0,0,0
+imdb,'Yes, this film does require a rather significant amount of puzzle-solving, but the pieces fit together to create a beautiful picture.',1,21,2,0,3,1,2,0,0,0,0,0
+imdb,'But this movie is not funny, considering the ridiculousness of it.',0,11,0,0,2,1,1,0,0,1,0,0
+amazon,'The instruction manual is lacking.',0,5,0,0,1,1,0,0,0,0,0,0
+amazon,'I love being able to use one headset for both by land-line and cell.',1,14,1,0,1,1,0,0,0,0,1,0
+yelp,'We enjoy their pizza and brunch.',1,6,1,0,1,1,0,0,0,0,0,0
+amazon,'It plays louder than any other speaker of this size; the price is so low that most would think the quality is lacking, however, it\"s not.',1,26,0,1,3,1,2,0,0,0,0,0
+yelp,'I immediately said I wanted to talk to the manager but I did not want to talk to the guy who was doing shots of fireball behind the bar.',0,29,0,0,1,1,0,0,0,1,1,0
+amazon,'Battery life is also great!',1,5,0,0,1,0,0,1,0,0,0,0
+yelp,'No one at the table thought the food was above average or worth the wait that we had for it.',0,20,1,0,1,1,0,0,0,1,0,0
+imdb,'If you act in such a film, you should be glad that you\"re gonna drift away from earth as far as possible!',0,22,1,0,2,0,1,1,0,0,0,0
+yelp,'After 20 minutes wait, I got a table.',0,8,0,0,2,1,1,0,0,0,0,0
+imdb,'This if the first movie I\"ve given a 10 to in years.',1,12,0,0,1,1,0,0,0,0,0,0
+yelp,'The burger... I got the \"Gold Standard\" a $17 burger and was kind of disappointed.',0,15,0,0,4,4,0,0,0,0,0,0
+amazon,'Then I had to continue pairing it periodically since it somehow kept dropping.',0,13,0,0,1,1,0,0,0,0,0,0
+yelp,'I ordered the Lemon raspberry ice cocktail which was also incredible.',1,11,0,1,1,1,0,0,0,0,1,0
+amazon,'I really wanted the Plantronics 510 to be the right one, but it has too many issues for me.The good',0,20,2,1,2,1,1,0,0,0,1,0
+imdb,'I wasn\"t the least bit interested.',0,6,0,0,1,1,0,0,0,0,1,0
+amazon,'in addition it feels &amp; looks as if the phone is all lightweight cheap plastic.',0,15,0,1,1,1,0,0,0,0,0,0
+imdb,'It\"s like a bad two hour TV movie.',0,8,1,1,1,1,0,0,0,0,0,1
+amazon,'Don\"t waste your money!.',0,4,0,1,2,1,0,1,0,0,0,0
+amazon,'I usually don\"t like headbands but this one is very lightweight & doesn\"t mess up my hair.',1,17,1,1,1,1,0,0,0,0,1,0
+imdb,'This is probably one of the least effective and utterly unoriginal films I have ever seen in my entire life.',0,20,1,1,1,1,0,0,0,0,0,0
+yelp,'In fact I\"m going to round up to 4 stars, just because she was so awesome.',1,16,0,0,2,1,1,0,0,0,0,0
+yelp,'the staff is friendly and the joint is always clean.',1,10,1,0,1,1,0,0,0,0,0,0
+yelp,'Terrible management.',0,2,0,1,1,1,0,0,0,0,0,0
+yelp,'The WORST EXPERIENCE EVER.',0,4,0,1,1,1,0,0,0,0,0,3
+amazon,'This phone tries very hard to do everything but fails at it\"s very ability to be a phone.',0,18,0,2,1,1,0,0,0,0,0,0
+yelp,'They were golden-crispy and delicious.',1,5,0,0,1,1,0,0,0,0,0,0
+amazon,'Not only will it drain your player, but may also potentially fry it.',0,13,0,1,2,1,1,0,0,1,0,0
+yelp,'We watched our waiter pay a lot more attention to other tables and ignore us.',0,15,0,1,1,1,0,0,0,0,0,0
+amazon,'Yet Plantronincs continues to use the same flawed charger design.',0,10,0,1,1,1,0,0,0,0,0,0
+imdb,'The ending is so, SO perfect... you\"ll shed a tear.',1,10,0,0,5,4,1,0,0,0,0,1
+amazon,'I wear glasses and it fits fine with them.',1,9,1,0,1,1,0,0,0,0,1,0
+amazon,'Horrible, horrible protector.',0,3,0,1,2,1,1,0,0,0,0,0
+amazon,'Sprint - terrible customer service.',0,5,0,1,1,1,0,0,0,0,0,0
+yelp,'The food wasn\"t good.',0,4,0,0,1,1,0,0,0,0,0,0
+imdb,'Oh yeah, and the storyline was pathetic too.',0,8,0,1,2,1,1,0,0,0,0,0
+imdb,'Funny, clever, hip - just like Pray\"s previous film, Hype!',1,10,1,0,4,0,3,1,0,0,0,0
+amazon,'Great charger.',1,2,1,0,1,1,0,0,0,0,0,0
+yelp,'What a great double cheeseburger!',1,5,1,0,1,0,0,1,0,0,0,0
+yelp,'This place has a lot of promise but fails to deliver.',0,11,1,1,1,1,0,0,0,0,0,0
+imdb,'To be honest with you, this is unbelievable nonsense and very foolish.',0,12,1,2,2,1,1,0,0,0,0,0
+yelp,'I would not recommend this place.',0,6,1,0,1,1,0,0,0,1,1,0
+yelp,'It was either too cold, not enough flavor or just bad.',0,11,1,0,2,1,1,0,0,1,0,0
+amazon,'For the price on Amazon, it is an excellent product, which I would highly recommend.',1,15,1,0,3,1,2,0,0,0,0,0
+yelp,'As much as I\"d like to go back, I can\"t get passed the atrocious service and will never return.',0,19,1,1,2,1,1,0,0,0,0,0
+imdb,'Almost everyone involved must be return to school, acting is utterly predictable and bad, script is pile of garbage all round.',0,21,0,2,3,1,2,0,0,0,0,0
+yelp,'Pricing is a bit of a concern at Mellow Mushroom.',0,10,0,1,1,1,0,0,0,0,0,0
+amazon,'The iGo chargers and tips are really great.',1,8,0,0,1,1,0,0,0,0,0,0
+yelp,'It\"s too bad the food is so damn generic.',0,9,0,2,1,1,0,0,0,0,0,0
+yelp,'Wow very spicy but delicious.',1,5,1,0,1,1,0,0,0,0,0,0
+imdb,'And don\"t even get me started on the jerky camerawork.',0,10,0,1,1,1,0,0,0,0,0,0
+yelp,'Over rated.',0,2,0,0,1,1,0,0,0,0,0,0
+yelp,'The service was poor and thats being nice.',0,8,0,1,1,1,0,0,0,0,0,0
+yelp,'The waitress and manager are so friendly.',1,7,0,0,1,1,0,0,0,0,0,0
+amazon,'Does not fit.',0,3,0,0,1,1,0,0,0,1,0,0
+yelp,'I had a pretty satifying experience.',1,6,1,0,1,1,0,0,0,0,1,0
+yelp,'I liked the patio and the service was outstanding.',1,9,1,0,1,1,0,0,0,0,1,0
+yelp,'Both of the egg rolls were fantastic.',1,7,0,0,1,1,0,0,0,0,0,0
+imdb,'Trouble is, the writing and directing make it impossible to establish those things that make a movie watchable, like character, story, theme and so on.',0,25,1,2,5,1,4,0,0,0,0,0
+amazon,'It is practically useless and did not add any kind of boost to my reception after I bought it.',0,19,1,1,1,1,0,0,0,1,0,0
+amazon,'This case seems well made.',1,5,1,0,1,1,0,0,0,0,0,0
+amazon,'Also its slim enough to fit into my alarm clock docking station without removing the case.',1,16,1,1,1,1,0,0,0,0,0,0
+amazon,'I\"m using it with an iriver SPINN (with case) and it fits fine.',1,13,0,0,1,1,0,0,0,0,0,1
+amazon,'This is hands down the best phone I\"ve ever had.',1,10,1,0,1,1,0,0,0,0,0,0
+yelp,'We made the drive all the way from North Scottsdale... and I was not one bit disappointed!',1,17,0,0,4,3,0,1,0,1,0,0
+amazon,'It has been a winner for us.',1,7,1,0,1,1,0,0,0,0,0,0
+imdb,'Predictable, but not a bad watch.',1,6,0,1,2,1,1,0,0,1,0,0
+amazon,'Stay Away From the Q!.',0,5,0,0,2,1,0,1,0,0,0,1
+imdb,Horrible!,0,1,0,0,1,0,0,1,0,0,0,0
+imdb,'The performances are real and gripping, the crocdodile is extremely well done, indeed if the Black Water website is to be believed that\"s because they used real crocs and the swamp location is fabulous.',1,34,1,0,3,1,2,0,0,0,0,0
+yelp,'The cashier had no care what so ever on what I had to say it still ended up being wayyy overpriced.',0,21,0,0,1,1,0,0,0,1,0,0
+imdb,'When I saw it in the theater I thought I was going to be sick.',0,15,0,0,1,1,0,0,0,0,0,0
+amazon,'Who in their right mind is gonna buy this battery?.',0,10,1,0,2,1,0,0,1,0,0,0
+amazon,'It is cheap, and it feel and look just as cheap.',0,11,0,0,2,1,1,0,0,0,0,0
+imdb,'He owns the film, just as Spacek owned \"Coal Miner\"s Daughter\" and Quaid owned \"Great Balls of Fire.',1,18,0,0,2,1,1,0,0,0,0,0
+yelp,'He came running after us when he realized my husband had left his sunglasses on the table.',1,17,0,0,1,1,0,0,0,0,0,0
+imdb,'The script iswas there a script?',0,6,0,0,1,0,0,0,1,0,0,0
+amazon,'Works for me.',1,3,1,0,1,1,0,0,0,0,0,0
+yelp,'Seriously killer hot chai latte.',1,5,1,1,1,1,0,0,0,0,0,0
+imdb,'This movie is great--especially if you enjoy visual arts.',1,9,1,0,1,1,0,0,0,0,0,0
+amazon,'I found this product to be waaay too big.',0,9,0,0,1,1,0,0,0,0,1,0
