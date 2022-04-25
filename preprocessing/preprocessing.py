@@ -65,17 +65,17 @@ def count_negation(data: pd.DataFrame, negation: List[str]) -> pd.DataFrame:
     return data
 
 
-def rating_positive(data: pd.DataFrame, positive: List[str]) -> pd.DataFrame:
-    res: list[int] = []
-    flag: int = 0
-    for entry in data["text"]:
-        for sub in positive:
-            if entry.find(sub) != -1:
-                flag = 1
-        res.append(flag)
-        flag = 0
-    data["positive_rating"] = res
-    return data
+# def rating_positive(data: pd.DataFrame, positive: List[str]) -> pd.DataFrame:
+#     res: list[int] = []
+#     flag: int = 0
+#     for entry in data["text"]:
+#         for sub in positive:
+#             if entry.find(sub) != -1:
+#                 flag = 1
+#         res.append(flag)
+#         flag = 0
+#     data["positive_rating"] = res
+#     return data
 
 
 # def start_sentence(data: pd.DataFrame, start: List[str], title: str) -> pd.DataFrame:
@@ -200,10 +200,10 @@ def main():
 
     # data = count_uppercase_words(data, ["I", "A"])
 
-    data = rating_positive(
-        data, ["7/10", "8/10", "9/10", "10/10", "10 out of 10", "10+", "10 plus"]
-    )
-
+    # data = rating_positive(
+    #     data, ["7/10", "8/10", "9/10", "10/10", "10 out of 10", "10+", "10 plus"]
+    # )
+    #
     cols = data.columns.tolist()
 
     pred = data["class"]
@@ -226,7 +226,7 @@ def main():
     with open("no_list.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(nolist))
 
-    with open("mod_data_first_iteration_v4.arff", mode="w", encoding="utf-8") as dst:
+    with open("v6/mod_data_first_iteration_v6.arff", mode="w", encoding="utf-8") as dst:
         data.to_csv(dst, quoting=csv.QUOTE_NONNUMERIC, quotechar="'", index=False)
 
 

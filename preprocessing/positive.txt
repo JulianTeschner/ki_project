@@ -2006,9 +2006,17 @@ zest
 zippyn
 fantastic
 tasty
-<<<<<<< HEAD
 flavourful
-=======
 exactly
 revealing
->>>>>>> 5ae5d2c641f3ff7b854efb4c687c229ed5f3f52a
+7/10
+8/10
+9/10
+10/10
+10 out of 10
+10+
+10 plus
+10 out of 1-10
+nine out of ten
+ten
+is a 10
