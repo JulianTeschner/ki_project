@@ -5,12 +5,12 @@ import pandas as pd
 from typing import List
 
 
-def count_words(data: pd.DataFrame) -> pd.DataFrame:
-    res: list[int] = []
-    for entry in data["text"]:
-        res.append(len(entry.split(" ")))
-    data["sentence_lenght"] = res
-    return data
+# def count_words(data: pd.DataFrame) -> pd.DataFrame:
+# res: list[int] = []
+# for entry in data["text"]:
+#     res.append(len(entry.split(" ")))
+# data["sentence_lenght"] = res
+# return data
 
 
 def count_sentiment_words(
@@ -18,7 +18,19 @@ def count_sentiment_words(
 ) -> pd.DataFrame:
     res: list[int] = []
     for entry in data["text"]:
-        res.append(len([word for word in entry.split(" ") if word.lower() in words]))
+        res.append(
+            len(
+                [
+                    word
+                    for word in entry.replace(".", "")
+                    .replace("!", "")
+                    .replace("?", "")
+                    .replace(",", "")
+                    .split(" ")
+                    if word.lower() in words
+                ]
+            )
+        )
     data[title] = res
     return data
 
@@ -36,38 +48,71 @@ def count_punctuation(
 def count_negation(data: pd.DataFrame, negation: List[str]) -> pd.DataFrame:
     res: list[int] = []
     for entry in data["text"]:
-        res.append(len([word for word in entry.split(" ") if word.lower() in negation]))
-    data["negation"] = res
-    return data
-
-
-def start_sentence(data: pd.DataFrame, start: List[str], title: str) -> pd.DataFrame:
-    res: list[int] = []
-    for entry in data["text"]:
-        res.append(len([word for word in entry.split(" ", 1) if word in start]))
-    data[title] = res
-    return data
-
-
-def count_uppercase_words(data: pd.DataFrame, exception: List[str]) -> pd.DataFrame:
-    res: list[int] = []
-    for entry in data["text"]:
         res.append(
             len(
                 [
                     word
-                    for word in entry.split(" ")
-                    if word.isupper() and word not in exception
+                    for word in entry.replace(".", "")
+                    .replace("!", "")
+                    .replace("?", "")
+                    .replace(",", "")
+                    .split(" ")
+                    if word.lower() in negation
                 ]
             )
         )
-    data["upper_case"] = res
+    data["negation"] = res
     return data
 
 
+# def rating_positive(data: pd.DataFrame, positive: List[str]) -> pd.DataFrame:
+#     res: list[int] = []
+#     flag: int = 0
+#     for entry in data["text"]:
+#         for sub in positive:
+#             if entry.find(sub) != -1:
+#                 flag = 1
+#         res.append(flag)
+#         flag = 0
+#     data["positive_rating"] = res
+#     return data
+
+
+# def start_sentence(data: pd.DataFrame, start: List[str], title: str) -> pd.DataFrame:
+#     res: list[int] = []
+#     for entry in data["text"]:
+#         res.append(len([word for word in entry.split(" ", 1) if word in start]))
+#     data[title] = res
+#     return data
+#
+
+# def count_uppercase_words(data: pd.DataFrame, exception: List[str]) -> pd.DataFrame:
+#     res: list[int] = []
+#     for entry in data["text"]:
+#         res.append(
+#             len(
+#                 [
+#                     word
+#                     for word in entry.split(" ")
+#                     if word.isupper() and word not in exception
+#                 ]
+#             )
+#         )
+#     data["upper_case"] = res
+#     return data
+
+
 # Filter sentences that have no negative, positiv or negation
-def in_no_list():
-    pass
+def in_no_list(data: pd.DataFrame) -> pd.DataFrame:
+    res: list[int] = []
+    for index, row in data.iterrows():
+        if (
+            row["negative_adverbs"] == 0
+            and row["positive_words"] == 0
+            and row["negative_words"] == 0
+        ):
+            res.append(row["text"])
+    return res
 
 
 def main():
@@ -155,6 +200,10 @@ def main():
 
     # data = count_uppercase_words(data, ["I", "A"])
 
+    # data = rating_positive(
+    #     data, ["7/10", "8/10", "9/10", "10/10", "10 out of 10", "10+", "10 plus"]
+    # )
+    #
     cols = data.columns.tolist()
 
     pred = data["class"]
@@ -172,7 +221,12 @@ def main():
 
     print(data["text"])
 
-    with open("mod_data_first_iteration_v4.arff", mode="w", encoding="utf-8") as dst:
+    nolist = in_no_list(data)
+
+    with open("no_list.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(nolist))
+
+    with open("v6/mod_data_first_iteration_v6.arff", mode="w", encoding="utf-8") as dst:
         data.to_csv(dst, quoting=csv.QUOTE_NONNUMERIC, quotechar="'", index=False)
 
 
