@@ -1,5 +1,5 @@
 package activationStrategy;
 
-interface ActivationStrategy {
+public interface ActivationStrategy {
     public double calcActivation(double x);
 }
