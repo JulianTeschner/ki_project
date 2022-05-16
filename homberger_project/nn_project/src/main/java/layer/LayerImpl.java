@@ -12,14 +12,15 @@ public class LayerImpl implements Layer {
     public int offset = 0;
 
     public LayerImpl(int nodes, int followNodes, boolean isHidden, ActivationStrategy strategy) {
-        out = new double[followNodes + 1];
-        out[0] = 1;
         weights = new double[followNodes][nodes +1];
-        if (isHidden) {
-            initRandomWeights(weights);
-            this.offset = 1;
-        }
+        initRandomWeights(weights);
         this.g = strategy;
+        out = new double[followNodes];
+        if (isHidden) {
+            this.offset = 1;
+            out = new double[followNodes + 1];
+            out[0] = 1;
+        }
     }
 
     private void initRandomWeights(double[][] weigths) {
@@ -41,6 +42,20 @@ public class LayerImpl implements Layer {
             this.out[i+offset] = g.calcActivation(res);
         }
     }
-    public void backwardPass() {}
+
+    @Override
+    public void backwardPass() {
+
+    }
+
+    public void calcDeltaOutputLayer(double[] in, double[] y) {
+        for (int i = 0; i < delta.length; i++) {
+           delta[i] = g.calcDerivedActivation(in[i]) * (y[i] - this.out[i]);
+        }
+    }
+
+    public void calcDeltaHiddenLayer() {
+        
+    }
 
 }

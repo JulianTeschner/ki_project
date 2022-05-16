@@ -24,14 +24,18 @@ public class Main {
 
 //		LayerImpl inLayer = new LayerImpl(2, 2, false, new Sigmoid(), null);
 		LayerImpl firstLayer = new LayerImpl(2, 3, true, new Sigmoid());
-		LayerImpl secondLayer = new LayerImpl(3, 2, true, new Sigmoid());
+		LayerImpl secondLayer = new LayerImpl(3, 1, true, new Sigmoid());
+		LayerImpl outputLayer =  new LayerImpl(1, 1, false, new Sigmoid());
 
 
 //		inLayer.forwardPass(new double[]{2,2});
 		firstLayer.forwardPass(new double[]{1, 2, 2});
 		secondLayer.forwardPass(firstLayer.out);
+		outputLayer.forwardPass(secondLayer.out);
+
 		System.out.println(Arrays.toString(firstLayer.out));
 		System.out.println(Arrays.toString(secondLayer.out));
+		System.out.println(Arrays.toString(outputLayer.out));
 
 	}
 }
