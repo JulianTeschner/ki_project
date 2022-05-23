@@ -1,13 +1,15 @@
-import activationStrategy.ActivationStrategy;
 import activationStrategy.Sigmoid;
-import layer.LayerImpl;
+import layer.HiddenLayer;
+import layer.OutputLayer;
+import neuralNet.NeuralNetImpl;
 
-import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 
-
 public class Main {
+
+	public static double alpha = 0.1;
 
 	public static void main(String[] args) throws IOException {
 //		//1. Trainingsdaten auswaehlen bzw. einlesen
@@ -23,19 +25,22 @@ public class Main {
 //		p.evaluieren(daten);
 
 //		LayerImpl inLayer = new LayerImpl(2, 2, false, new Sigmoid(), null);
-		LayerImpl firstLayer = new LayerImpl(2, 3, true, new Sigmoid());
-		LayerImpl secondLayer = new LayerImpl(3, 1, true, new Sigmoid());
-		LayerImpl outputLayer =  new LayerImpl(1, 1, false, new Sigmoid());
+		double[] in = new double[]{0, 2,2};
+		ArrayList<HiddenLayer> layers = new ArrayList<>();
+		HiddenLayer firstLayer = new HiddenLayer(2, 3, new Sigmoid());
+		HiddenLayer secondLayer = new HiddenLayer(3, 1,  new Sigmoid());
+		OutputLayer outputLayer =  new OutputLayer(1, 1,  new Sigmoid());
+		layers.add(firstLayer);
+		layers.add(secondLayer);
+		layers.add(outputLayer);
+		NeuralNetImpl NN = new NeuralNetImpl(layers, 0.1);
 
+		NN.forwardPass(in);
+		NN.calcDeltaOutputLayer(secondLayer.out, new double[]{1});
+		NN.calcDeltaHiddenLayer();
 
-//		inLayer.forwardPass(new double[]{2,2});
-		firstLayer.forwardPass(new double[]{1, 2, 2});
-		secondLayer.forwardPass(firstLayer.out);
-		outputLayer.forwardPass(secondLayer.out);
-
-		System.out.println(Arrays.toString(firstLayer.out));
-		System.out.println(Arrays.toString(secondLayer.out));
-		System.out.println(Arrays.toString(outputLayer.out));
-
+		System.out.println(Arrays.toString(NN.layers.get(0).out));
+		System.out.println(Arrays.toString(NN.layers.get(1).out));
+		System.out.println(Arrays.toString(NN.layers.get(2).out));
 	}
 }
