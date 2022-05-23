@@ -1,15 +1,15 @@
 package neuralNet;
 
-import layer.HiddenLayer;
+import layer.Layer;
 
 import java.util.ArrayList;
 
 public class NeuralNetImpl implements NeuralNet{
 
-    public ArrayList<HiddenLayer> layers;
+    public ArrayList<Layer> layers;
     public double alpha;
 
-    public NeuralNetImpl(ArrayList<HiddenLayer> layers, double alpha) {
+    public NeuralNetImpl(ArrayList<Layer> layers, double alpha) {
        this.layers = layers;
        this.alpha = alpha;
 
@@ -21,35 +21,32 @@ public class NeuralNetImpl implements NeuralNet{
             if (k == 0) {
                 forwardStrategy(layers.get(k), in);
             } else {
-                forwardStrategy(layers.get(k), layers.get(k - 1).out);
+                forwardStrategy(layers.get(k), layers.get(k - 1).getOut());
             }
         }
     }
 
     @Override
-    public void forwardStrategy(HiddenLayer layer, double[] in) {
-        for (int i = 0; i < layer.weights.length; i++) {
+    public void forwardStrategy(Layer layer, double[] in) {
+        for (int i = 0; i < layer.getWeights().length; i++) {
             double res = 0;
-            for (int j = 0; j < layer.weights[0].length; j++) {
-                res += in[j] * layer.weights[i][j];
+            for (int j = 0; j < layer.getWeights()[0].length; j++) {
+                res += in[j] * layer.getWeights()[i][j];
             }
-            layer.out[i+layer.offset] = layer.g.calcActivation(res);
+            layer.getOut()[i+layer.getOffset()] = layer.getG().calcActivation(res);
         }
     }
-
-
 
     @Override
     public void backwardPass() {
-
     }
 
     @Override
     public void calcDeltaOutputLayer(double[] in, double[] y) {
-        HiddenLayer output =  layers.get(layers.size()-1);
-        for (int i = 0; i < output.delta.length; i++) {
+        Layer output =  layers.get(layers.size()-1);
+        for (int i = 0; i < output.getDelta().length; i++) {
             // in[i+1] wegen bias
-            output.delta[i] = output.g.calcDerivedActivation(in[i+1]) * (y[i] - output.out[i]);
+            output.getDelta()[i] = output.getG().calcDerivedActivation(in[i+1]) * (y[i] - output.getOut()[i]);
         }
 //        // weight = weight + alpha * out * delta
 //        for (int i = 0; i < weights.length; i++) {
@@ -63,12 +60,12 @@ public class NeuralNetImpl implements NeuralNet{
     @Override
     public void calcDeltaHiddenLayer() {
         for (int i = layers.size()-2; i > 0; i--) {
-            for (int j = 0; j < this.layers.get(i).weights[0].length ; j++) {
+            for (int j = 0; j < this.layers.get(i).getWeights()[0].length ; j++) {
                 double sum = 0;
-                for (int k = 0; k < this.layers.get(i).weights.length; k++) {
-                   sum += layers.get(i+1).delta[k] * layers.get(i).weights[k][j];
+                for (int k = 0; k < this.layers.get(i).getWeights().length; k++) {
+                   sum += layers.get(i+1).getDelta()[k] * layers.get(i).getWeights()[k][j];
                 }
-                layers.get(i).delta[j] = sum * layers.get(i).g.calcDerivedActivation(layers.get(i-1).out[j]);
+                layers.get(i).getDelta()[j] = sum * layers.get(i).getG().calcDerivedActivation(layers.get(i-1).getOut()[j]);
             }
         }
     }

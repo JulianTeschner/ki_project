@@ -1,6 +1,6 @@
 package neuralNet;
 
-import layer.HiddenLayer;
+import layer.Layer;
 
 public interface NeuralNet {
     public void forwardPass(double[] in);
@@ -11,5 +11,5 @@ public interface NeuralNet {
 
     public void calcDeltaOutputLayer(double[] in, double[] y);
 
-    public void forwardStrategy(HiddenLayer layer, double[] in);
+    public void forwardStrategy(Layer layer, double[] in);
 }

@@ -1,5 +1,6 @@
 import activationStrategy.Sigmoid;
 import layer.HiddenLayer;
+import layer.Layer;
 import layer.OutputLayer;
 import neuralNet.NeuralNetImpl;
 
@@ -26,7 +27,7 @@ public class Main {
 
 //		LayerImpl inLayer = new LayerImpl(2, 2, false, new Sigmoid(), null);
 		double[] in = new double[]{0, 2,2};
-		ArrayList<HiddenLayer> layers = new ArrayList<>();
+		ArrayList<Layer> layers = new ArrayList<>();
 		HiddenLayer firstLayer = new HiddenLayer(2, 3, new Sigmoid());
 		HiddenLayer secondLayer = new HiddenLayer(3, 1,  new Sigmoid());
 		OutputLayer outputLayer =  new OutputLayer(1, 1,  new Sigmoid());
@@ -39,8 +40,8 @@ public class Main {
 		NN.calcDeltaOutputLayer(secondLayer.out, new double[]{1});
 		NN.calcDeltaHiddenLayer();
 
-		System.out.println(Arrays.toString(NN.layers.get(0).out));
-		System.out.println(Arrays.toString(NN.layers.get(1).out));
-		System.out.println(Arrays.toString(NN.layers.get(2).out));
+		System.out.println(Arrays.toString(NN.layers.get(0).getOut()));
+		System.out.println(Arrays.toString(NN.layers.get(1).getOut()));
+		System.out.println(Arrays.toString(NN.layers.get(2).getOut()));
 	}
 }

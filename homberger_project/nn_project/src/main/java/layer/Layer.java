@@ -34,4 +34,7 @@ public interface Layer {
     public void setWeights(double[][] weights);
 
     public void setOffset(int offset);
+
+    public void calcDelta();
+
 }

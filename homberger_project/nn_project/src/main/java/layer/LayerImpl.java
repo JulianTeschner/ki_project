@@ -23,15 +23,6 @@ public class LayerImpl implements Layer {
         }
     }
 
-    private void initRandomWeights(double[][] weigths) {
-        for (int i = 0; i < weigths.length; i++) {
-            weights[i][0] = 1;
-            for (int j = 0; j < weigths[0].length; j++) {
-                weights[i][j] = Math.random()*2-1;
-            }
-        }
-    }
-
     @Override
     public void forwardPass(double[] in) {
         for (int i = 0; i < weights.length; i++) {
