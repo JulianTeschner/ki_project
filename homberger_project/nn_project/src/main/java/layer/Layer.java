@@ -3,7 +3,7 @@ package layer;
 import activationStrategy.ActivationStrategy;
 
 public interface Layer {
-    default public void initRandomWeights(double[][] weights) {
+    default void initRandomWeights(double[][] weights) {
         for (int i = 0; i < weights.length; i++) {
             weights[i][0] = 1;
             for (int j = 0; j < weights[0].length; j++) {
@@ -14,27 +14,26 @@ public interface Layer {
     }
 
 
-    public ActivationStrategy getG();
+    ActivationStrategy getG();
 
-    public double[] getOut();
+    void setG(ActivationStrategy g);
 
-    public double[] getDelta();
+    double[] getOut();
 
-    public double[][] getWeights();
+    void setOut(double[] out);
 
-    public int getOffset();
+    double[] getDelta();
 
+    void setDelta(double[] delta);
 
-    public void setG(ActivationStrategy g);
+    double[][] getWeights();
 
-    public void setOut(double[] out);
+    void setWeights(double[][] weights);
 
-    public void setDelta(double[] delta);
+    int getOffset();
 
-    public void setWeights(double[][] weights);
+    void setOffset(int offset);
 
-    public void setOffset(int offset);
-
-    public void calcDelta();
+    void calcDelta(Layer prev, Layer next);
 
 }

@@ -10,7 +10,7 @@ public class HiddenLayer implements Layer {
     public int offset = 1;
 
     public HiddenLayer(int nodes, int followNodes, ActivationStrategy strategy) {
-        weights = new double[followNodes][nodes +1];
+        weights = new double[followNodes][nodes + 1];
         this.initRandomWeights(weights);
         this.g = strategy;
         out = new double[followNodes + 1];
@@ -69,6 +69,13 @@ public class HiddenLayer implements Layer {
     }
 
     @Override
-    public void calcDelta() {}
-
+    public void calcDelta(Layer prev, Layer next) {
+        for (int j = 0; j < this.getWeights()[0].length; j++) {
+            double sum = 0;
+            for (int k = 0; k < this.getWeights().length; k++) {
+                sum += next.getDelta()[k] * next.getWeights()[k][j];
+            }
+            this.getDelta()[j] = sum * this.getG().calcDerivedActivation(prev.getOut()[j]);
+        }
+    }
 }

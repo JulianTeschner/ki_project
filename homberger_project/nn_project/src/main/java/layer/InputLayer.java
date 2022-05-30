@@ -2,22 +2,27 @@ package layer;
 
 import activationStrategy.ActivationStrategy;
 
-public class InputLayer implements Layer{
+public class InputLayer implements Layer {
     public ActivationStrategy g;
     public double[] out;
     public double[] delta;
     public double[][] weights;
     public int offset = 1;
 
-    public InputLayer(int nodes, int followNodes, ActivationStrategy strategy){
-        weights = new double[followNodes][nodes +1];
-        this.initRandomWeights(weights);
+    public InputLayer(int nodes, int followNodes, ActivationStrategy strategy) {
+        weights = new double[followNodes][nodes + 1];
+        for (int i = 0; i < weights.length; i++) {
+            for (int j = 0; j < weights[0].length; j++) {
+                weights[i][j] = 1;
+            }
+        }
         this.g = strategy;
         out = new double[followNodes + 1];
         out[0] = 1;
         delta = new double[nodes + 1];
 
     }
+
     @Override
     public ActivationStrategy getG() {
         return g;
@@ -69,5 +74,7 @@ public class InputLayer implements Layer{
     }
 
     @Override
-    public void calcDelta() {}
+    public void calcDelta(Layer prev, Layer next) {
+    }
+
 }

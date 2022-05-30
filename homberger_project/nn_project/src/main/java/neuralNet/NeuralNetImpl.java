@@ -4,14 +4,14 @@ import layer.Layer;
 
 import java.util.ArrayList;
 
-public class NeuralNetImpl implements NeuralNet{
+public class NeuralNetImpl implements NeuralNet {
 
     public ArrayList<Layer> layers;
     public double alpha;
 
     public NeuralNetImpl(ArrayList<Layer> layers, double alpha) {
-       this.layers = layers;
-       this.alpha = alpha;
+        this.layers = layers;
+        this.alpha = alpha;
 
     }
 
@@ -33,7 +33,7 @@ public class NeuralNetImpl implements NeuralNet{
             for (int j = 0; j < layer.getWeights()[0].length; j++) {
                 res += in[j] * layer.getWeights()[i][j];
             }
-            layer.getOut()[i+layer.getOffset()] = layer.getG().calcActivation(res);
+            layer.getOut()[i + layer.getOffset()] = layer.getG().calcActivation(res);
         }
     }
 
@@ -42,31 +42,15 @@ public class NeuralNetImpl implements NeuralNet{
     }
 
     @Override
-    public void calcDeltaOutputLayer(double[] in, double[] y) {
-        Layer output =  layers.get(layers.size()-1);
-        for (int i = 0; i < output.getDelta().length; i++) {
-            // in[i+1] wegen bias
-            output.getDelta()[i] = output.getG().calcDerivedActivation(in[i+1]) * (y[i] - output.getOut()[i]);
-        }
-//        // weight = weight + alpha * out * delta
-//        for (int i = 0; i < weights.length; i++) {
-//            for (int j = 0; j < weights[0].length; j++) {
-//
-//            }
-//
-//        }
-    }
-
-    @Override
-    public void calcDeltaHiddenLayer() {
-        for (int i = layers.size()-2; i > 0; i--) {
-            for (int j = 0; j < this.layers.get(i).getWeights()[0].length ; j++) {
-                double sum = 0;
-                for (int k = 0; k < this.layers.get(i).getWeights().length; k++) {
-                   sum += layers.get(i+1).getDelta()[k] * layers.get(i).getWeights()[k][j];
-                }
-                layers.get(i).getDelta()[j] = sum * layers.get(i).getG().calcDerivedActivation(layers.get(i-1).getOut()[j]);
+    public void calcDelta() {
+        for (int i = layers.size() - 1; i >= 1; i--) {
+            if (i == layers.size() - 1) {
+                layers.get(i).calcDelta(layers.get(i - 1), null);
+            } else {
+                layers.get(i).calcDelta(layers.get(i - 1), layers.get(i + 1));
             }
         }
     }
+
+
 }

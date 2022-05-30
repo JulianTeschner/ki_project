@@ -2,21 +2,23 @@ package layer;
 
 import activationStrategy.ActivationStrategy;
 
-public class OutputLayer implements Layer{
+public class OutputLayer implements Layer {
 
 
     public ActivationStrategy g;
     public double[] out;
     public double[] delta;
     public double[][] weights;
-    public int offset = 1;
+    public int offset = 0;
+    public double[] y;
 
-    public OutputLayer(int nodes, int followNodes, ActivationStrategy strategy) {
-        weights = new double[followNodes][nodes +1];
+    public OutputLayer(int nodes, int followNodes, ActivationStrategy strategy, double[] y) {
+        weights = new double[followNodes][nodes + 1];
         initRandomWeights(weights);
         this.g = strategy;
         out = new double[followNodes];
         delta = new double[nodes];
+        this.y = y;
     }
 
     @Override
@@ -69,8 +71,11 @@ public class OutputLayer implements Layer{
         this.offset = offset;
     }
 
-    public void calcDelta() {
-
+    @Override
+    public void calcDelta(Layer prev, Layer next) {
+        for (int i = 0; i < this.getDelta().length; i++) {
+            // in[i+1] wegen bias
+            this.getDelta()[i] = this.getG().calcDerivedActivation(prev.getOut()[i + 1]) * (y[i] - this.getOut()[i]);
+        }
     }
-
 }
