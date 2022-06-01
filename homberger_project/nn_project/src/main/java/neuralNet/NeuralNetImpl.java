@@ -19,7 +19,13 @@ public class NeuralNetImpl implements NeuralNet {
     public void forwardPass(double[] in) {
         for (int k = 0; k < layers.size(); k++) {
             if (k == 0) {
-                forwardStrategy(layers.get(k), in);
+//                forwardStrategy(layers.get(k), in);
+                double[] out = new double[layers.get(k).getOut().length];
+                out[0] = 1;
+                for (int i = 0; i < in.length; i++) {
+                    out[i + 1] = in[i];
+                }
+                layers.get(k).setOut(out);
             } else {
                 forwardStrategy(layers.get(k), layers.get(k - 1).getOut());
             }

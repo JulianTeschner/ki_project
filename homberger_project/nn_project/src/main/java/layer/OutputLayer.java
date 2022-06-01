@@ -13,7 +13,7 @@ public class OutputLayer implements Layer {
     public double[] y;
 
     public OutputLayer(int nodes, int followNodes, ActivationStrategy strategy, double[] y) {
-        weights = new double[followNodes][nodes + 1];
+        weights = new double[followNodes][nodes];
         initRandomWeights(weights);
         this.g = strategy;
         out = new double[followNodes];

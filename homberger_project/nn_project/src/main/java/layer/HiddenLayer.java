@@ -73,7 +73,7 @@ public class HiddenLayer implements Layer {
         for (int j = 0; j < this.getWeights()[0].length; j++) {
             double sum = 0;
             for (int k = 0; k < this.getWeights().length; k++) {
-                sum += next.getDelta()[k] * next.getWeights()[k][j];
+                sum += next.getDelta()[k] * this.getWeights()[k][j];
             }
             this.getDelta()[j] = sum * this.getG().calcDerivedActivation(prev.getOut()[j]);
         }

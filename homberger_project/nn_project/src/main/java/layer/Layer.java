@@ -5,7 +5,6 @@ import activationStrategy.ActivationStrategy;
 public interface Layer {
     default void initRandomWeights(double[][] weights) {
         for (int i = 0; i < weights.length; i++) {
-            weights[i][0] = 1;
             for (int j = 0; j < weights[0].length; j++) {
 //                weights[i][j] = Math.random()*2-1;
                 weights[i][j] = 1;
