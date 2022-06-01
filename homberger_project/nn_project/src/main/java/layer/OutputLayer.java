@@ -78,4 +78,15 @@ public class OutputLayer implements Layer {
             this.getDelta()[i] = this.getG().calcDerivedActivation(prev.getOut()[i + 1]) * (y[i] - this.getOut()[i]);
         }
     }
+
+    @Override
+    public void forwardStrategy(double[] in) {
+        for (int i = 0; i < this.getWeights().length; i++) {
+            double res = 0;
+            for (int j = 0; j < this.getWeights()[0].length; j++) {
+                res += in[j] * this.getWeights()[i][j];
+            }
+            this.getOut()[i + this.getOffset()] = this.getG().calcActivation(res);
+        }
+    }
 }

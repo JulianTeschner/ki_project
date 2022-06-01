@@ -77,4 +77,12 @@ public class InputLayer implements Layer {
     public void calcDelta(Layer prev, Layer next) {
     }
 
+    @Override
+    public void forwardStrategy(double[] in) {
+        double[] out = new double[this.getOut().length];
+        out[0] = 1;
+        System.arraycopy(in, 0, out, 1, in.length);
+        this.setOut(out);
+    }
+
 }

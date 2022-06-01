@@ -35,4 +35,6 @@ public interface Layer {
 
     void calcDelta(Layer prev, Layer next);
 
+    void forwardStrategy(double[] in);
+
 }

@@ -9,5 +9,4 @@ public interface NeuralNet {
 
     void calcDelta();
 
-    void forwardStrategy(Layer layer, double[] in);
 }

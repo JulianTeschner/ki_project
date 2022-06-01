@@ -19,29 +19,23 @@ public class NeuralNetImpl implements NeuralNet {
     public void forwardPass(double[] in) {
         for (int k = 0; k < layers.size(); k++) {
             if (k == 0) {
-//                forwardStrategy(layers.get(k), in);
-                double[] out = new double[layers.get(k).getOut().length];
-                out[0] = 1;
-                for (int i = 0; i < in.length; i++) {
-                    out[i + 1] = in[i];
-                }
-                layers.get(k).setOut(out);
+                layers.get(k).forwardStrategy(in);
             } else {
-                forwardStrategy(layers.get(k), layers.get(k - 1).getOut());
+                layers.get(k).forwardStrategy(layers.get(k).getOut());
             }
         }
     }
 
-    @Override
-    public void forwardStrategy(Layer layer, double[] in) {
-        for (int i = 0; i < layer.getWeights().length; i++) {
-            double res = 0;
-            for (int j = 0; j < layer.getWeights()[0].length; j++) {
-                res += in[j] * layer.getWeights()[i][j];
-            }
-            layer.getOut()[i + layer.getOffset()] = layer.getG().calcActivation(res);
-        }
-    }
+//    @Override
+//    public void forwardStrategy(Layer layer, double[] in) {
+//        for (int i = 0; i < layer.getWeights().length; i++) {
+//            double res = 0;
+//            for (int j = 0; j < layer.getWeights()[0].length; j++) {
+//                res += in[j] * layer.getWeights()[i][j];
+//            }
+//            layer.getOut()[i + layer.getOffset()] = layer.getG().calcActivation(res);
+//        }
+//    }
 
     @Override
     public void backwardPass() {

@@ -78,4 +78,25 @@ public class HiddenLayer implements Layer {
             this.getDelta()[j] = sum * this.getG().calcDerivedActivation(prev.getOut()[j]);
         }
     }
+
+    @Override
+    public void forwardStrategy(double[] in) {
+        for (int i = 0; i < this.getWeights().length; i++) {
+            double res = 0;
+            for (int j = 0; j < this.getWeights()[0].length; j++) {
+                res += in[j] * this.getWeights()[i][j];
+            }
+            this.getOut()[i + this.getOffset()] = this.getG().calcActivation(res);
+        }
+    }
+
+//    public void forwardStrategy(Layer layer, double[] in) {
+//        for (int i = 0; i < layer.getWeights().length; i++) {
+//            double res = 0;
+//            for (int j = 0; j < layer.getWeights()[0].length; j++) {
+//                res += in[j] * layer.getWeights()[i][j];
+//            }
+//            layer.getOut()[i + layer.getOffset()] = layer.getG().calcActivation(res);
+//        }
+//    }
 }
