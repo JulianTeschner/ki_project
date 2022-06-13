@@ -38,7 +38,7 @@ public class Main {
         NeuralNetImpl NN = new NeuralNetImpl(layers, 0.1);
 
         NN.forwardPass(in);
-        NN.calcDelta();
+        NN.backwardPass();
 
         System.out.println(Arrays.toString(NN.layers.get(0).getDelta()));
         System.out.println(Arrays.toString(NN.layers.get(1).getDelta()));

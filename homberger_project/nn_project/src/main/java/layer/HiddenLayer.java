@@ -23,6 +23,8 @@ public class HiddenLayer implements Layer {
         return g;
     }
 
+
+
     @Override
     public void setG(ActivationStrategy g) {
         this.g = g;

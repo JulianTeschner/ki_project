@@ -29,6 +29,11 @@ public class InputLayer implements Layer {
     }
 
     @Override
+    public void backpropagation(double alpha, double[] in) {
+
+    }
+
+    @Override
     public void setG(ActivationStrategy g) {
         this.g = g;
     }

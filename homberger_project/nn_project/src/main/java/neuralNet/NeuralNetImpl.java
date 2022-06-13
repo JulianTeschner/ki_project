@@ -21,24 +21,18 @@ public class NeuralNetImpl implements NeuralNet {
             if (k == 0) {
                 layers.get(k).forwardStrategy(in);
             } else {
-                layers.get(k).forwardStrategy(layers.get(k).getOut());
+                layers.get(k).forwardStrategy(layers.get(k-1).getOut());
             }
         }
     }
 
-//    @Override
-//    public void forwardStrategy(Layer layer, double[] in) {
-//        for (int i = 0; i < layer.getWeights().length; i++) {
-//            double res = 0;
-//            for (int j = 0; j < layer.getWeights()[0].length; j++) {
-//                res += in[j] * layer.getWeights()[i][j];
-//            }
-//            layer.getOut()[i + layer.getOffset()] = layer.getG().calcActivation(res);
-//        }
-//    }
 
     @Override
     public void backwardPass() {
+        this.calcDelta();
+        for (int i = this.layers.size()-1; i > 0; i--) {
+            this.layers.get(i).backpropagation(this.alpha, this.layers.get(i-1).getOut());
+        }
     }
 
     @Override

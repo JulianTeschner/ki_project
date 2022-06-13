@@ -26,6 +26,7 @@ public class OutputLayer implements Layer {
         return g;
     }
 
+
     @Override
     public void setG(ActivationStrategy g) {
         this.g = g;
@@ -89,4 +90,17 @@ public class OutputLayer implements Layer {
             this.getOut()[i + this.getOffset()] = this.getG().calcActivation(res);
         }
     }
+
+    @Override
+    public void backpropagation(double alpha, double[] in) {
+        for (int i = 0; i < this.getWeights().length; i++) {
+            for (int j = 0; j < this.getWeights().length; j++) {
+                double sum = 0;
+                for (int k = 0; k < out.length; k++) {
+                    sum += in[k+1] * this.getDelta()[k];
+                }
+                this.getWeights()[i][j] += alpha * sum;
+            }
+        }
+    };
 }
