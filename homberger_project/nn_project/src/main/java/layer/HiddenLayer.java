@@ -92,13 +92,4 @@ public class HiddenLayer implements Layer {
         }
     }
 
-//    public void forwardStrategy(Layer layer, double[] in) {
-//        for (int i = 0; i < layer.getWeights().length; i++) {
-//            double res = 0;
-//            for (int j = 0; j < layer.getWeights()[0].length; j++) {
-//                res += in[j] * layer.getWeights()[i][j];
-//            }
-//            layer.getOut()[i + layer.getOffset()] = layer.getG().calcActivation(res);
-//        }
-//    }
 }

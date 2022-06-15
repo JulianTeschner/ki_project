@@ -6,38 +6,46 @@ import layer.InputLayer;
 import layer.Layer;
 import layer.OutputLayer;
 import neuralNet.NeuralNetImpl;
+import reader.DataReader;
 
-import java.io.IOException;
+import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        int epochs = 1000;
+        int epochs = 100;
         double alpha = 0.1;
+        double[][] input= DataReader.einlesenDiabetes(new File("data\\diabetes.csv"), true);
+        double[] y = new double[input.length];
+        for (int i = 0; i < input.length; i++) {
+            y[i] = input[i][input[0].length-1];
+        }
+        double[] out = new double[y.length];
 
-
-        double[] in = new double[]{0, 2, 2};
         ArrayList<Layer> layers = new ArrayList<>();
-        Layer firstLayer = new InputLayer(2, 3, new Sigmoid());
-        Layer secondLayer = new HiddenLayer(3, 1, new Sigmoid());
-        Layer outputLayer = new OutputLayer(1, 1, new Sigmoid(), new double[]{1});
+        Layer firstLayer = new InputLayer(input[0].length, input[0].length, new Sigmoid());
+        Layer secondLayer = new HiddenLayer(input[0].length, 1, new Sigmoid());
+        Layer outputLayer = new OutputLayer(1, 1, new Sigmoid(), y);
         layers.add(firstLayer);
         layers.add(secondLayer);
         layers.add(outputLayer);
-        NeuralNetImpl NN = new NeuralNetImpl(layers, alpha);
-        Evaluate evaluation = new EvaluateImpl(new double[]{1}, outputLayer);
+        NeuralNetImpl nn = new NeuralNetImpl(layers, alpha);
 
 
         for (int i = 0; i < epochs; i++) {
-            NN.forwardPass(in);
-            NN.backwardPass();
+            for (int j = 0; j < input.length; j++) {
+                System.arraycopy(input[j], 0,input[j], 1, input[j].length-1);
+                input[j][0] = 0;
+                nn.forwardPass(input[j]);
+                nn.backwardPass();
+                out[j] = nn.layers.get(nn.layers.size()-1).getOut()[0];
 
-            System.out.println(Arrays.toString(NN.layers.get(2).getOut()));
-            evaluation.evaluate();
+            }
+            Evaluate evaluation = new EvaluateImpl(y, out);
+            evaluation.evaluate(i);
         }
     }
 }

@@ -1,7 +1,7 @@
 package evaluation;
 
 public interface Evaluate {
-    void evaluate();
+    void evaluate(int epoch);
 
     double calculatePrecision(double truePositive, double falsePositive);
     double calculateRecall(double truePositive, double falseNegative);

@@ -6,8 +6,8 @@ public interface Layer {
     default void initRandomWeights(double[][] weights) {
         for (int i = 0; i < weights.length; i++) {
             for (int j = 0; j < weights[0].length; j++) {
-//                weights[i][j] = Math.random()*2-1;
-                weights[i][j] = 1;
+                weights[i][j] = Math.random()*2-1;
+//                weights[i][j] = 1;
             }
         }
     }
@@ -25,7 +25,7 @@ public interface Layer {
                 this.getWeights()[i][j] += alpha * sum;
             }
         }
-    };
+    }
 
     void setG(ActivationStrategy g);
 
