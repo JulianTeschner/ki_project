@@ -1,9 +1,9 @@
 package evaluation;
 
 public interface Evaluate {
-    public void evaluate();
+    void evaluate();
 
-    public double calcultePrecision(double truePositive, double falsePositive);
-    public double calculteRecall(double truePositive, double falseNegative);
-    public double calculteF(double truePositive, double falsePositive, double falseNegative);
+    double calculatePrecision(double truePositive, double falsePositive);
+    double calculateRecall(double truePositive, double falseNegative);
+    double calculateF(double truePositive, double falsePositive, double falseNegative);
 }
