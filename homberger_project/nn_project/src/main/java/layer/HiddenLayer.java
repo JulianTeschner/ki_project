@@ -71,7 +71,7 @@ public class HiddenLayer implements Layer {
     }
 
     @Override
-    public void calcDelta(Layer prev, Layer next) {
+    public void calcDelta(Layer prev, Layer next, double y) {
         for (int j = 0; j < this.getWeights()[0].length; j++) {
             double sum = 0;
             for (int k = 0; k < this.getWeights().length; k++) {

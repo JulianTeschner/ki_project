@@ -32,7 +32,9 @@ public class EvaluateImpl implements Evaluate {
                 }
             }
         }
-        System.out.printf("Epoch: %d\n\t1\t0\n1\t%.0f\t%.0f\n0\t%.0f\t%.0f\n", epoch+1, truePositive, falseNegative, falsePositive, trueNegative);
+        System.out.printf("Epoch: %d\n", epoch+1);
+        System.out.println("\t1\t0");
+        System.out.printf("1\t%.0f\t%.0f\n0\t%.0f\t%.0f\n", truePositive, falseNegative, falsePositive, trueNegative);
         System.out.printf("Precision: %f \n", calculatePrecision(truePositive, falsePositive));
         System.out.printf("Recall: %f \n", calculateRecall(truePositive, falseNegative));
         System.out.printf("F-Value: %f \n", calculateF(truePositive, falsePositive, falseNegative));

@@ -5,8 +5,8 @@ import layer.Layer;
 public interface NeuralNet {
     void forwardPass(double[] in);
 
-    void backwardPass();
+    void backwardPass(double y);
 
-    void calcDelta();
+    void calcDelta(double y);
 
 }

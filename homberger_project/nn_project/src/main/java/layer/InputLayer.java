@@ -15,10 +15,10 @@ public class InputLayer implements Layer {
             for (int j = 0; j < weights[0].length; j++) {
                 weights[i][j] = 1;
             }
+            weights[i][0]=0;
         }
         this.g = strategy;
-        out = new double[followNodes + 1];
-        out[0] = 1;
+        out = new double[followNodes];
         delta = new double[nodes + 1];
 
     }
@@ -79,15 +79,12 @@ public class InputLayer implements Layer {
     }
 
     @Override
-    public void calcDelta(Layer prev, Layer next) {
+    public void calcDelta(Layer prev, Layer next, double y) {
     }
 
     @Override
     public void forwardStrategy(double[] in) {
-        double[] out = new double[this.getOut().length];
-        out[0] = 1;
-        System.arraycopy(in, 0, out, 1, in.length);
-        this.setOut(out);
+        setOut(in);
     }
 
 }

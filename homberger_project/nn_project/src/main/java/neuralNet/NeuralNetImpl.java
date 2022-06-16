@@ -28,20 +28,20 @@ public class NeuralNetImpl implements NeuralNet {
 
 
     @Override
-    public void backwardPass() {
-        this.calcDelta();
+    public void backwardPass(double y) {
+        this.calcDelta(y);
         for (int i = this.layers.size()-1; i > 0; i--) {
             this.layers.get(i).backpropagation(this.alpha, this.layers.get(i-1).getOut());
         }
     }
 
     @Override
-    public void calcDelta() {
+    public void calcDelta(double y) {
         for (int i = layers.size() - 1; i >= 1; i--) {
             if (i == layers.size() - 1) {
-                layers.get(i).calcDelta(layers.get(i - 1), null);
+                layers.get(i).calcDelta(layers.get(i - 1), null, y);
             } else {
-                layers.get(i).calcDelta(layers.get(i - 1), layers.get(i + 1));
+                layers.get(i).calcDelta(layers.get(i - 1), layers.get(i + 1), 0);
             }
         }
     }

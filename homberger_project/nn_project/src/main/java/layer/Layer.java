@@ -17,12 +17,8 @@ public interface Layer {
 
     default void backpropagation(double alpha, double[] in) {
         for (int i = 0; i < this.getWeights().length; i++) {
-            for (int j = 0; j < this.getWeights().length; j++) {
-                double sum = 0;
-                for (int k = 0; k < in.length; k++) {
-                    sum += in[k] * this.getDelta()[k];
-                }
-                this.getWeights()[i][j] += alpha * sum;
+            for (int j = 0; j < this.getWeights()[0].length; j++) {
+                this.getWeights()[i][j] += alpha * this.getOut()[i] * this.getDelta()[j];
             }
         }
     }
@@ -45,7 +41,7 @@ public interface Layer {
 
     void setOffset(int offset);
 
-    void calcDelta(Layer prev, Layer next);
+    void calcDelta(Layer prev, Layer next, double y);
 
     void forwardStrategy(double[] in);
 
