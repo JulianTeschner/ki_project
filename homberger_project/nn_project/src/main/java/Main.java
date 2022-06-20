@@ -1,3 +1,4 @@
+import activationStrategy.Relu;
 import activationStrategy.Sigmoid;
 import evaluation.Evaluate;
 import evaluation.EvaluateImpl;
@@ -10,13 +11,16 @@ import reader.DataReader;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
 
 
     public static void main(String[] args) {
 
-        int epochs = 1000;
+        int epochs = 100000;
         double alpha = 0.1;
         double[][] input= DataReader.einlesenDiabetes(new File("data\\diabetes.csv"), true);
         double[] y = new double[input.length];
@@ -26,13 +30,15 @@ public class Main {
         double[] out = new double[y.length];
 
         ArrayList<Layer> layers = new ArrayList<>();
-        Layer firstLayer = new InputLayer(input[0].length , input[0].length, new Sigmoid());
-        Layer secondLayer = new HiddenLayer(input[0].length - 1, 3, new Sigmoid());
-        Layer thirdLayer = new HiddenLayer(3, 1, new Sigmoid());
-        Layer outputLayer = new OutputLayer(1, 1, new Sigmoid());
+        Layer firstLayer = new InputLayer(input[0].length , input[0].length, new Relu());
+        Layer secondLayer = new HiddenLayer(input[0].length - 1, 8, new Relu());
+        Layer thirdLayer = new HiddenLayer(8, 8, new Relu());
+        Layer fourthLayer = new HiddenLayer(8, 1, new Relu());
+        Layer outputLayer = new OutputLayer(1, 1, new Relu());
         layers.add(firstLayer);
         layers.add(secondLayer);
         layers.add(thirdLayer);
+        layers.add(fourthLayer);
         layers.add(outputLayer);
         NeuralNetImpl nn = new NeuralNetImpl(layers, alpha);
 
@@ -42,7 +48,9 @@ public class Main {
         }
 
         for (int i = 0; i < epochs; i++) {
-            for (int j = 0; j < input.length; j++) {
+            List<double[]> inputList = Arrays.asList(input);
+            Collections.shuffle(inputList);
+            for (int j = 0; j < inputList.size(); j++) {
                 nn.forwardPass(input[j]);
                 out[j] = nn.layers.get(nn.layers.size()-1).getOut()[0];
             }
